@@ -1,6 +1,6 @@
 /**
- * Dui Konna (দুই কন্যা) — JSON-LD Structured Data Components
- * SEO (Organization, BreadcrumbList, Product schemas)
+ * TAFA | Dhaka (তাফা) — JSON-LD Structured Data Components
+ * SEO (Organization, LocalBusiness, BreadcrumbList, Product schemas)
  */
 
 import { BUSINESS } from "@/lib/constants";
@@ -10,9 +10,9 @@ export function OrganizationJsonLd() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: BUSINESS.NAME,
-    alternateName: "দুই কন্যা",
+    alternateName: BUSINESS.NAME_BN,
     url: BUSINESS.WEBSITE,
-    logo: `${BUSINESS.WEBSITE}/duikonna-assets/logo.png`,
+    logo: `${BUSINESS.WEBSITE}/tafa-assets/logo.png`,
     contactPoint: {
       "@type": "ContactPoint",
       telephone: BUSINESS.PHONE,
@@ -24,8 +24,8 @@ export function OrganizationJsonLd() {
     address: {
       "@type": "PostalAddress",
       streetAddress: BUSINESS.ADDRESS,
-      addressLocality: "Nikunja-2, Khilkhet, Dhaka",
-      postalCode: "1229",
+      addressLocality: "Dhanmondi, Dhaka",
+      postalCode: "1209",
       addressCountry: "BD",
     },
   };
@@ -34,16 +34,16 @@ export function OrganizationJsonLd() {
     "@context": "https://schema.org",
     "@type": "ClothingStore",
     name: BUSINESS.NAME,
-    alternateName: "দুই কন্যা",
-    image: `${BUSINESS.WEBSITE}/duikonna-assets/logo.png`,
+    alternateName: BUSINESS.NAME_BN,
+    image: `${BUSINESS.WEBSITE}/tafa-assets/logo.png`,
     url: BUSINESS.WEBSITE,
     telephone: BUSINESS.PHONE,
-    priceRange: "৳৳৳",
+    priceRange: "৳৳",
     address: {
       "@type": "PostalAddress",
       streetAddress: BUSINESS.ADDRESS,
-      addressLocality: "Nikunja-2, Khilkhet, Dhaka",
-      postalCode: "1229",
+      addressLocality: "Dhanmondi, Dhaka",
+      postalCode: "1209",
       addressCountry: "BD",
     },
     openingHoursSpecification: [
@@ -58,7 +58,7 @@ export function OrganizationJsonLd() {
           "Thursday",
           "Friday"
         ],
-        opens: "11:00",
+        opens: "10:30",
         closes: "21:00"
       }
     ]

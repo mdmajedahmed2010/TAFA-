@@ -27,40 +27,39 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-// Global metadata — Dui Konna (দুই কন্যা)
+// Global metadata — TAFA (তাফা)
 export const metadata: Metadata = {
   metadataBase: new URL(BUSINESS.WEBSITE),
   title: {
-    default: "Dui Konna (দুই কন্যা) — এক্সক্লুসিভ ঢাকাই মসলিন ও জামদানি শাড়ি",
-    template: "%s — Dui Konna (দুই কন্যা)",
+    default: "TAFA (তাফা) — উৎসবকে সাজাই TAFA’র শাড়িতে | প্রিমিয়াম শাড়ির সমাহার",
+    template: "%s — TAFA (তাফা)",
   },
   description:
-    "দুই কন্যা (Dui Konna) — আমাদের রয়েছে ঢাকাই মসলিন শাড়ির সবচেয়ে অনন্য কালেকশন। খাঁটি ঢাকাই মসলিন, ঐতিহ্যবাহী জামদানি, ব্রাইডাল রেড মসলিন ও এক্সক্লুসিভ কারচুপি পোশাক। ৪৮৪,০০০+ আপুদের ভরসা। শোরুম: নিকুঞ্জ-২, খিলক্ষেত, ঢাকা। সারাদেশে ক্যাশ অন হোম ডেলিভারি ও পার্সেল খুলে চেক করে পেমেন্ট করার নিশ্চিন্ত সুবিধা।",
+    "TAFA (তাফা) — উৎসবকে সাজাই TAFA’র শাড়িতে। সবচেয়ে রিজনেবল প্রাইসে কালামকারি শাড়ি, কোটা ডোরিয়া, টিস্যু কাতান ও বুটিক শাড়ির বিশাল সমাহার। ৪০৪,০০০+ আপুদের ভরসা। শোরুম: ধানমন্ডি ৫, বাড়ি নং ৪২/১, ঢাকা ১২০৯। সারা বাংলাদেশে ক্যাশ অন হোম ডেলিভারি ও পার্সেল খুলে চেক করে পেমেন্ট করার নিশ্চিন্ত সুবিধা।",
   keywords: [
-    "Dui Konna",
-    "দুই কন্যা",
-    "duikonna01",
-    "Shamima Nasrin",
-    "শামীমা নাসরিন",
-    "Muslin Saree Dhaka",
-    "ঢাকাই মসলিন শাড়ি",
-    "Dhakai Jamdani Saree",
-    "ঢাকাই জামদানি শাড়ি",
-    "Bridal Red Muslin Saree",
-    "Karchupi Saree BD",
-    "Nikunja 2 Dui Konna Showroom",
-    "Dui Konna Facebook Page",
+    "TAFA",
+    "তাফা",
+    "tafatonzehee",
+    "TAFA Saree",
+    "Kalamkari Saree Dhaka",
+    "কালামকারি শাড়ি",
+    "Kota Doria Saree",
+    "কোটা ডোরিয়া শাড়ি",
+    "Tissue Katan Saree BD",
+    "টিস্যু কাতান শাড়ি",
+    "Dhanmondi Saree Showroom",
+    "TAFA Facebook Page",
   ],
-  authors: [{ name: "Dui Konna" }],
-  creator: "Dui Konna",
+  authors: [{ name: "TAFA" }],
+  creator: "TAFA",
   openGraph: {
     type: "website",
     locale: "bn_BD",
-    siteName: "Dui Konna",
-    title: "Dui Konna (দুই কন্যা) — এক্সক্লুসিভ ঢাকাই মসলিন ও জামদানি শাড়ি",
+    siteName: "TAFA",
+    title: "TAFA (তাফা) — উৎসবকে সাজাই TAFA’র শাড়িতে | প্রিমিয়াম শাড়ির সমাহার",
     description:
-      "আমাদের রয়েছে মসলিন শাড়ির সবচেয়ে অনন্য কালেকশন। নিকুঞ্জ-২ শোরুম ও অনলাইন হোম ডেলিভারি। পার্সেল খুলে চেক করে পেমেন্ট করার ১০০% নিশ্চিন্ত সুবিধা।",
-    images: ["/duikonna-assets/banner.jpg"],
+      "উৎসবকে সাজাই TAFA’র শাড়িতে — সবচেয়ে রিজনেবল প্রাইসে প্রিমিয়াম শাড়ির সমাহার। ধানমন্ডি ৫ শোরুম ও অনলাইন হোম ডেলিভারি। পার্সেল খুলে চেক করে পেমেন্ট করার ১০০% নিশ্চিন্ত সুবিধা।",
+    images: ["/tafa-assets/baner.jpg"],
   },
   robots: {
     index: true,
@@ -71,12 +70,12 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Dui Konna",
+    title: "TAFA",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#8B0000",
+  themeColor: "#133827",
 };
 
 export default async function RootLayout({

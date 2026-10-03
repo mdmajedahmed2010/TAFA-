@@ -1,10 +1,10 @@
 "use client";
 
 /**
- * Dui Konna (দুই কন্যা) — Interactive "Shop The Look" Lookbook
+ * TAFA (তাফা) — Interactive "Shop The Look" Lookbook
  * Direct editorial saree hotspot interaction and instant order
- * Nikunja-2, Khilkhet, Dhaka-1229 • Facebook: https://www.facebook.com/duikonna01
- * 484,000+ Followers • Open Parcel Inspection Nationwide
+ * House 42/1, Road 5, Dhanmondi, Dhaka 1209 • FB: https://www.facebook.com/tafatonzehee
+ * 404,000+ Followers • "সবচেয়ে রিজনেবল প্রাইসে প্রিমিয়াম শাড়ির সমাহার"
  */
 
 import { useState } from "react";
@@ -41,19 +41,19 @@ interface CoutureLook {
 const COUTURE_LOOKS: CoutureLook[] = [
   {
     id: "look-1",
-    tabLabel: "Royal Muslin (৳29,000)",
-    title: "Mustard Gold Dhakai Muslin Saree",
-    subtitle: "খাঁটি ঢাকাই মসলিনের জমিনে সূক্ষ্ম জরির কাজ ও ঐতিহ্যবাহী সুবাস। দাম মুদ্রিত: ৳২৯,০০০।",
-    heroImage: ASSETS.product3,
+    tabLabel: "Tissue Katan (৳3,450)",
+    title: "Pure Gold Festive Tissue Katan Bridal Saree",
+    subtitle: "গাঢ় গোল্ডেন শিimmer ও রয়্যাল জরি জারদৌসি পাড়ে বিয়ের জমকালো সাজের অনন্য আকর্ষণ।",
+    heroImage: ASSETS.tissueKatanGold,
     spots: [
       {
         id: "spot-1",
-        name: "Royal Yellow & Mustard Gold Dhakai Muslin Saree (৳29,000 Verified)",
-        category: "Exclusive Muslin Saree",
-        price: 29000,
-        comparePrice: 32000,
-        slug: "royal-yellow-mustard-gold-dhakai-muslin-saree-29000",
-        image: ASSETS.product3,
+        name: "Festive Pure Gold Tissue Katan Bridal Saree",
+        category: "Festive Tissue Katan",
+        price: 3450,
+        comparePrice: 4200,
+        slug: "festive-pure-gold-tissue-katan-bridal-saree",
+        image: ASSETS.tissueKatanGold,
         x: 50,
         y: 48,
         sizes: ["Full Saree (12 Haat)", "With Blouse Piece"],
@@ -62,61 +62,61 @@ const COUTURE_LOOKS: CoutureLook[] = [
   },
   {
     id: "look-2",
-    tabLabel: "Bridal Red Muslin",
-    title: "Royal Crimson Bridal Muslin Saree",
-    subtitle: "বিয়ের কনে ও বিশেষ উৎসবের জন্য খাঁটি লাল ঢাকাই মসলিন ও চোখজুড়ানো স্বর্ণালী আঁচল।",
-    heroImage: ASSETS.heroBanner,
+    tabLabel: "Champagne Silk (৳3,450)",
+    title: "Royal Champagne Gold Tissue Silk Saree",
+    subtitle: "অভিজাত শ্যাম্পেন গোল্ডেন টিস্যু সিল্ক শাড়ি—গর্জিয়াস কুন্দন ও জুয়েলারির সাথে ক্লাসিক ড্র্যাপিং।",
+    heroImage: ASSETS.tissueSilkChampagne,
     spots: [
       {
         id: "spot-2",
-        name: "Royal Crimson Bridal Heritage Dhakai Muslin Saree",
-        category: "Bridal & Festive Red Muslin",
-        price: 26500,
-        comparePrice: 30000,
-        slug: "royal-crimson-bridal-heritage-muslin-saree",
-        image: ASSETS.heroBanner,
+        name: "Royal Champagne Gold Tissue Silk Saree",
+        category: "Festive Tissue Katan",
+        price: 3450,
+        comparePrice: 4200,
+        slug: "royal-champagne-gold-tissue-silk-saree",
+        image: ASSETS.tissueSilkChampagne,
         x: 50,
-        y: 42,
+        y: 44,
         sizes: ["Full Saree (12 Haat)", "With Blouse Piece"],
       },
     ],
   },
   {
     id: "look-3",
-    tabLabel: "Luxury Karchupi",
-    title: "Dusty Lilac Luxury Karchupi Handcrafted Saree",
-    subtitle: "ডাস্টি লিলাক প্যাস্টেল শেডে ভারী কারচুপি, পার্ল ও স্টোনের চোখজুড়ানো কারুকাজ।",
-    heroImage: ASSETS.product8,
+    tabLabel: "Kalamkari (৳1,850)",
+    title: "Midnight Black Kalamkari Cotton Silk Saree",
+    subtitle: "হাতে আঁকা ঐতিহ্যবাহী ময়ূর ও হাতির মোটিফে ব্ল্যাক ও মাস্টার্ড ইয়েলো কনট্রাস্টের নান্দনিক ঐতিহ্য।",
+    heroImage: ASSETS.kalamkariBlack,
     spots: [
       {
         id: "spot-3",
-        name: "Dusty Lilac Lavender Luxury Karchupi Handcrafted Saree",
-        category: "Luxury Karchupi & Organza",
-        price: 28000,
-        comparePrice: 31500,
-        slug: "dusty-lilac-lavender-luxury-karchupi-designer-saree",
-        image: ASSETS.product8,
+        name: "Midnight Black Traditional Kalamkari Cotton Silk Saree",
+        category: "Kalamkari Saree",
+        price: 1850,
+        comparePrice: 2400,
+        slug: "midnight-black-traditional-kalamkari-cotton-silk-saree",
+        image: ASSETS.kalamkariBlack,
         x: 50,
-        y: 45,
-        sizes: ["Full Saree (12 Haat)", "Designer Blouse Piece"],
+        y: 46,
+        sizes: ["Full Saree (12 Haat)", "With Blouse Piece"],
       },
     ],
   },
   {
     id: "look-4",
-    tabLabel: "Mint Green Muslin",
-    title: "Mint Green Butterfly Handloom Muslin Saree",
-    subtitle: "স্নিগ্ধ মিন্ট গ্রিন শেডে সোনালী বাটারফ্লাই জরি কাজ। হালকা ও আরামদায়ক রাজকীয় অনুভূতি।",
-    heroImage: ASSETS.product2,
+    tabLabel: "Sapphire Blue (৳2,650)",
+    title: "Royal Sapphire Blue Floral Silk Saree",
+    subtitle: "রয়্যাল ব্লু বডিতে মাল্টিকালার ফ্লোরাল ও গোল্ডেন জরি পাল্লু—উৎসবের মার্জিত ড্র্যাপিং লুক।",
+    heroImage: ASSETS.royalBlueFloral,
     spots: [
       {
         id: "spot-4",
-        name: "Mint Green Butterfly Handloom Dhakai Muslin Saree",
-        category: "Pastel Heritage Muslin",
-        price: 22500,
-        comparePrice: 25000,
-        slug: "mint-green-butterfly-handloom-dhakai-muslin-saree",
-        image: ASSETS.product2,
+        name: "Royal Sapphire Blue Floral Silk Saree with Zari Pallu",
+        category: "Designer Silk",
+        price: 2650,
+        comparePrice: 3200,
+        slug: "royal-sapphire-blue-floral-silk-saree",
+        image: ASSETS.royalBlueFloral,
         x: 50,
         y: 46,
         sizes: ["Full Saree (12 Haat)", "With Blouse Piece"],
@@ -177,15 +177,15 @@ export function LookbookCouture() {
         <div className="text-center max-w-2xl mx-auto mb-10 md:mb-14">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#D4AF37]/50 mb-3 shadow-xs">
             <Crown className="h-3 w-3 text-[#D4AF37]" />
-            <span className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#8B0000]">
-              DUI KONNA LOOKBOOK
+            <span className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#133827]">
+              TAFA LOOKBOOK
             </span>
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-[#1A1A1A] font-heading tracking-tight">
-            Shamima Nasrin&apos;s Saree Stylebook
+            Festive Saree Stylebook
           </h2>
           <p className="mt-3 text-sm md:text-base text-neutral-600 font-medium">
-            দুই কন্যার এক্সক্লুসিভ ঢাকাই মসলিন, জামদানি ও লাক্সারি কারচুপি শাড়ি সরাসরি অর্ডার করুন।
+            উৎসবকে সাজাই TAFA’র শাড়িতে — ধানমন্ডি ৫ শোরুম এবং অনলাইনে সরাসরি অর্ডার করুন সবচেয়ে রিজনেবল প্রাইসের প্রিমিয়াম শাড়ি।
           </p>
 
           {/* Tab Navigation */}
@@ -196,7 +196,7 @@ export function LookbookCouture() {
                 onClick={() => handleTabChange(idx)}
                 className={`px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer ${
                   activeTab === idx
-                    ? "bg-[#8B0000] text-[#D4AF37] shadow-lg border border-[#D4AF37] scale-105"
+                    ? "bg-[#133827] text-[#D4AF37] shadow-lg border border-[#D4AF37] scale-105"
                     : "bg-white text-neutral-700 hover:bg-[#FAF7F2] border border-[#E8DFD3]"
                 }`}
               >
@@ -240,11 +240,11 @@ export function LookbookCouture() {
                   setSelectedSize(spot.sizes[0] ?? "Full Saree (12 Haat)");
                 }}
                 style={{ left: `${spot.x}%`, top: `${spot.y}%` }}
-                className="absolute z-10 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center size-9 rounded-full bg-white text-[#8B0000] shadow-2xl hover:scale-115 transition-transform duration-300 ring-4 ring-[#D4AF37] cursor-pointer"
+                className="absolute z-10 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center size-9 rounded-full bg-white text-[#133827] shadow-2xl hover:scale-115 transition-transform duration-300 ring-4 ring-[#D4AF37] cursor-pointer"
                 aria-label={`View ${spot.name}`}
               >
-                <span className="size-3 rounded-full bg-[#8B0000] animate-ping absolute" />
-                <span className="size-3 rounded-full bg-[#8B0000] relative z-10" />
+                <span className="size-3 rounded-full bg-[#133827] animate-ping absolute" />
+                <span className="size-3 rounded-full bg-[#133827] relative z-10" />
               </button>
             ))}
           </div>
@@ -265,7 +265,7 @@ export function LookbookCouture() {
 
             {/* Price Box */}
             <div className="flex items-baseline gap-3 p-4 rounded-2xl bg-[#FAF7F2] border border-[#E8DFD3]">
-              <span className="text-2xl md:text-3xl font-bold text-[#8B0000] font-heading">
+              <span className="text-2xl md:text-3xl font-bold text-[#133827] font-heading">
                 ৳{activeSpot.price.toLocaleString()}
               </span>
               {activeSpot.comparePrice > activeSpot.price && (
@@ -290,7 +290,7 @@ export function LookbookCouture() {
                     onClick={() => setSelectedSize(sz)}
                     className={`py-2.5 px-3 rounded-xl text-xs font-bold transition-all border cursor-pointer ${
                       selectedSize === sz
-                        ? "bg-[#8B0000] text-[#D4AF37] border-[#D4AF37] shadow-sm"
+                        ? "bg-[#133827] text-[#D4AF37] border-[#D4AF37] shadow-sm"
                         : "bg-white text-neutral-700 hover:bg-[#FAF7F2] border-[#E8DFD3]"
                     }`}
                   >
@@ -305,7 +305,7 @@ export function LookbookCouture() {
               <button
                 onClick={handleAddToCart}
                 disabled={isAdding}
-                className="w-full h-13 rounded-full bg-[#8B0000] hover:bg-[#6B0000] text-[#D4AF37] hover:text-white font-bold text-xs uppercase tracking-[0.16em] transition-all duration-300 shadow-md flex items-center justify-center gap-2 active:scale-98 cursor-pointer"
+                className="w-full h-13 rounded-full bg-[#133827] hover:bg-[#0E291C] text-[#D4AF37] hover:text-white font-bold text-xs uppercase tracking-[0.16em] transition-all duration-300 shadow-md flex items-center justify-center gap-2 active:scale-98 cursor-pointer"
               >
                 {isAdding ? (
                   <>
@@ -322,7 +322,7 @@ export function LookbookCouture() {
 
               <Link
                 href={`/products/${activeSpot.slug}`}
-                className="w-full h-11 rounded-full bg-white hover:bg-[#FAF7F2] text-[#8B0000] border border-[#D4AF37]/50 font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-1.5"
+                className="w-full h-11 rounded-full bg-white hover:bg-[#FAF7F2] text-[#133827] border border-[#D4AF37]/50 font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-1.5"
               >
                 <span>View Full Saree Details</span>
                 <ArrowUpRight className="h-3.5 w-3.5" />

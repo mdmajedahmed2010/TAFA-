@@ -1,10 +1,11 @@
 "use client";
 
 /**
- * Dui Konna (দুই কন্যা) — Haute Couture Hero Experience
+ * TAFA (তাফা) — Haute Couture Hero Experience
  * Asymmetric Editorial Canvas with Interactive Saree Hotspots
- * Nikunja-2, Khilkhet, Dhaka-1229 • Facebook: https://www.facebook.com/duikonna01
- * 484,000+ Followers • Authentic Dhakai Muslin & Luxury Sarees
+ * Flagship Showroom: House 42/1, Road No 5, Dhanmondi, Dhaka 1209
+ * Facebook: https://www.facebook.com/tafatonzehee • 404,000+ Followers
+ * Open Parcel Inspection Nationwide
  */
 
 import { useState, useEffect, useCallback } from "react";
@@ -37,74 +38,74 @@ export interface CoutureHeroSlide {
 const HERO_SLIDES: CoutureHeroSlide[] = [
   {
     id: "slide-1",
-    image: ASSETS.heroBanner,
-    category: "শামীমা নাসরিন সিগনেচার • ৪৮৪K+ আপুদের পরিবার",
-    title: "রাজকীয় ঢাকাই",
-    italicWord: "মসলিন কালেকশন ✨",
+    image: ASSETS.showroomInterior,
+    category: "ধানমন্ডি ফ্ল্যাগশিপ শোরুম • ৪০৪K+ আপুদের পরিবার",
+    title: "উৎসবকে সাজাই",
+    italicWord: "TAFA’র শাড়িতে ✨",
     subtitle:
-      "বাংলার সুপ্রাচীন ঐতিহ্যে বোনা খাঁটি ঢাকai মসলিন শাড়ি। নিখুঁত তাঁত বুনন, স্বর্ণালী জরির সূক্ষ্ম নকশা এবং রাজকীয় লাল ও সোনালী আভিজাত্য—প্রতিটি ব্রাইডাল ও উৎসবের সাজে সম্পূর্ণ অনন্য।",
-    link: "/categories/exclusive-muslin-saree",
+      "সবচেয়ে রিজনেবল প্রাইসে ঐতিহ্যবাহী কালামকারি, কোটা ডোরিয়া ও টিস্যু কাতান শাড়ির অনন্য সমাহার। ধানমন্ডি ৫ শোরুম থেকে সরাসরি ট্রায়াল দিয়ে কেনার সুযোগ ও সারা দেশে ক্যাশ অন হোম ডেলিভারি।",
+    link: "/collections/showroom-specials",
     hotspot: {
-      name: "Royal Yellow & Mustard Gold Dhakai Muslin Saree (৳29,000 Verified)",
-      price: 29000,
-      comparePrice: 32000,
-      slug: "royal-yellow-mustard-gold-dhakai-muslin-saree-29000",
+      name: "TAFA Dhanmondi Flagship Exclusive Showroom Curation Saree",
+      price: 2450,
+      comparePrice: 2950,
+      slug: "tafa-dhanmondi-flagship-exclusive-showroom-curation-saree",
       x: 48,
       y: 50,
     },
   },
   {
     id: "slide-2",
-    image: ASSETS.product8,
-    category: "LUXURY KARCHUPI & ORGANZA",
-    title: "DUSTY LILAC",
-    italicWord: "লাক্সারি কারচুপি শাড়ি",
+    image: ASSETS.tissueKatanGold,
+    category: "উৎসবে টিস্যু কাতান ও সিল্ক",
+    title: "ROYAL GOLDEN",
+    italicWord: "টিস্যু কাতান ব্রাইডাল",
     subtitle:
-      "হাতে বোনা সূক্ষ্ম কারচুপি কাজ ও পার্ল-স্টোনের চোখজুড়ানো কারুকাজ। ডাস্টি লিলাক প্যাস্টেল শেডের এই অভিজাত শাড়িতে ফুটে ওঠে স্নিগ্ধতা ও মর্ডান এলিগ্যান্স।",
-    link: "/products/dusty-lilac-lavender-luxury-karchupi-designer-saree",
+      "আলো ঝলমলে সোনালী টিস্যু কাতানের রাজকীয় রূপ। বিয়ে, রিসেপশন ও উৎসবের জমকালো সাজে সম্পূর্ণ আভিজাত্যপূর্ণ ও চোখ জুড়ানো রেশমি কারুকাজ।",
+    link: "/collections/festive-tissue-katan",
     hotspot: {
-      name: "Dusty Lilac Lavender Luxury Karchupi Handcrafted Saree",
-      price: 28000,
-      comparePrice: 31500,
-      slug: "dusty-lilac-lavender-luxury-karchupi-designer-saree",
-      x: 52,
-      y: 42,
-    },
-  },
-  {
-    id: "slide-3",
-    image: ASSETS.product1,
-    category: "HERITAGE HANDLOOM MUSLIN",
-    title: "RUST ORANGE",
-    italicWord: "বাটারফ্লাই জরি মসলিন",
-    subtitle:
-      "উষ্ণ রাস্ট অরেঞ্জ শেডে প্রজাপতি মোটিফের সোনালী জরির অনবদ্য অলংকরণ। আভিজাত্যপ্রিয় নারীদের পারিবারিক উৎসব ও সান্ধ্যকালীন অনুষ্ঠানের পরম পছন্দ।",
-    link: "/products/rust-orange-butterfly-zari-woven-dhakai-muslin-saree",
-    hotspot: {
-      name: "Rust Orange Butterfly Zari Woven Dhakai Muslin Saree",
-      price: 24500,
-      comparePrice: 27500,
-      slug: "rust-orange-butterfly-zari-woven-dhakai-muslin-saree",
-      x: 46,
+      name: "TAFA Pure Gold Festive Tissue Katan Bridal Saree Special",
+      price: 3250,
+      comparePrice: 3850,
+      slug: "tafa-pure-gold-festive-tissue-katan-bridal-saree-special",
+      x: 50,
       y: 45,
     },
   },
   {
-    id: "slide-4",
-    image: ASSETS.product5,
-    category: "DHAKAI JAMDANI COLLECTION",
-    title: "PEARL WHITE",
-    italicWord: "মাল্টিকালার ঢাকাই জামদানি",
+    id: "slide-3",
+    image: ASSETS.kotaCrimson,
+    category: "কোটা ডোরিয়া ও লিনেন সিল্ক ট্রায়ো",
+    title: "FESTIVE RED",
+    italicWord: "কোটা ডোরিয়া সিল্ক",
     subtitle:
-      "খাঁটি পার্ল হোয়াইট সুতার জমিনে জ্যামিতিক নকশার মাল্টিকালার থ্রেড ওয়ার্ক ও ঐতিহ্যবাহী জামদানি পাড়। বাংলার শতবর্ষী ঐতিহ্যের এক নিখুঁত রূপ।",
-    link: "/products/pearl-white-multicolor-geometric-dhakai-jamdani-saree",
+      "উজ্জ্বল লাল কোটা ডোরিয়া শাড়ি—সোনালী ফ্লোরাল কলকা বুটি, শেভরন জিগজ্যাগ আঁচল এবং সূক্ষ্ম জরি কাজের ক্লাসিক উৎসব শাড়ি।",
+    link: "/collections/kota-doria-linen",
     hotspot: {
-      name: "Pearl White Multicolor Geometric Dhakai Jamdani Saree",
-      price: 27500,
-      comparePrice: 30000,
-      slug: "pearl-white-multicolor-geometric-dhakai-jamdani-saree",
-      x: 50,
+      name: "TAFA Crimson Red Festive Kota Doria & Linen Silk Designer Saree",
+      price: 1650,
+      comparePrice: 1950,
+      slug: "tafa-crimson-red-festive-kota-doria-linen-silk-designer-saree",
+      x: 46,
       y: 48,
+    },
+  },
+  {
+    id: "slide-4",
+    image: ASSETS.kalamkariBlack,
+    category: "ঐতিহ্যবাহী কালামকারি বুটিক",
+    title: "MIDNIGHT PEACOCK",
+    italicWord: "কালামকারি বুটিক শাড়ি",
+    subtitle:
+      "মিডনাইট ব্ল্যাক ও মাস্টার্ড কালারে ময়ূর মোটিফ, স্ট্রাইপড আঁচল এবং রূপালী জরির গর্জিয়াস হাতি পাড়ের সূক্ষ্ম ঐতিহ্যবাহী কারুকাজ।",
+    link: "/collections/kalamkari-sarees",
+    hotspot: {
+      name: "TAFA Midnight Black & Mustard Kalamkari Peacock Motif Boutique Saree",
+      price: 1990,
+      comparePrice: 2450,
+      slug: "tafa-midnight-black-mustard-kalamkari-peacock-motif-boutique-saree",
+      x: 50,
+      y: 46,
     },
   },
 ];
@@ -144,10 +145,10 @@ export function HeroCouture() {
   };
 
   return (
-    <section className="relative w-full bg-[#FAF7F2] overflow-hidden border-b border-[#E8DFD3]">
+    <section className="relative w-full bg-[#FAF7F2] overflow-hidden border-b border-[#E5DAC6]">
       {/* Background Decorative Typography */}
-      <div className="absolute top-1/2 -left-12 -translate-y-1/2 pointer-events-none select-none text-[100px] md:text-[220px] font-bold text-black/[0.02] font-heading leading-none whitespace-nowrap z-0">
-        DUI KONNA
+      <div className="absolute top-1/2 -left-12 -translate-y-1/2 pointer-events-none select-none text-[100px] md:text-[240px] font-bold text-black/[0.02] font-heading leading-none whitespace-nowrap z-0">
+        TAFA
       </div>
 
       <div className="container mx-auto px-4 md:px-8 lg:px-12 py-10 md:py-16 relative z-10">
@@ -157,16 +158,16 @@ export function HeroCouture() {
             {/* Tagline Badge */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#D4AF37]/50 shadow-xs">
               <Crown className="h-3.5 w-3.5 text-[#D4AF37]" />
-              <span className="text-[10px] md:text-[11px] font-bold tracking-[0.16em] uppercase text-[#8B0000]">
+              <span className="text-[10px] md:text-[11px] font-bold tracking-[0.16em] uppercase text-[#133827]">
                 {activeSlide.category}
               </span>
             </div>
 
             {/* Haute Main Heading */}
             <div className="space-y-2">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#1A1A1A] font-heading leading-[1.08]">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#121815] font-heading leading-[1.08]">
                 {activeSlide.title} <br />
-                <span className="italic font-normal font-serif text-[#8B0000] tracking-normal">
+                <span className="italic font-normal font-serif text-[#133827] tracking-normal">
                   {activeSlide.italicWord}
                 </span>
               </h1>
@@ -179,7 +180,7 @@ export function HeroCouture() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
               <Link
                 href={activeSlide.link}
-                className="h-12 md:h-13 px-8 rounded-full bg-[#8B0000] hover:bg-[#6B0000] text-[#D4AF37] hover:text-white text-xs md:text-sm font-bold tracking-[0.14em] uppercase transition-all duration-300 shadow-md flex items-center justify-center gap-2 group/btn active:scale-98"
+                className="h-12 md:h-13 px-8 rounded-full bg-[#133827] hover:bg-[#1A4B35] text-[#D4AF37] hover:text-white text-xs md:text-sm font-bold tracking-[0.14em] uppercase transition-all duration-300 shadow-md flex items-center justify-center gap-2 group/btn active:scale-98"
               >
                 <span>অর্ডার করুন / View Collection</span>
                 <ArrowUpRight className="h-4 w-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
@@ -189,7 +190,7 @@ export function HeroCouture() {
                 href={BUSINESS.WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-12 md:h-13 px-6 rounded-full bg-white hover:bg-[#FAF7F2] text-[#8B0000] border border-[#D4AF37]/40 text-xs md:text-sm font-semibold tracking-wider transition-colors flex items-center justify-center gap-2 shadow-xs"
+                className="h-12 md:h-13 px-6 rounded-full bg-white hover:bg-[#FAF7F2] text-[#133827] border border-[#D4AF37]/40 text-xs md:text-sm font-semibold tracking-wider transition-colors flex items-center justify-center gap-2 shadow-xs"
               >
                 <Sparkles className="h-4 w-4 text-[#D4AF37]" />
                 <span>হটলাইন: {BUSINESS.PHONE}</span>
@@ -197,27 +198,27 @@ export function HeroCouture() {
             </div>
 
             {/* Value Indicators Row */}
-            <div className="grid grid-cols-3 gap-3 pt-4 border-t border-[#E8DFD3]">
+            <div className="grid grid-cols-3 gap-3 pt-4 border-t border-[#E5DAC6]">
               <div className="space-y-0.5">
-                <div className="flex items-center gap-1 text-[#8B0000]">
-                  <Star className="h-3.5 w-3.5 fill-current" />
-                  <span className="text-xs font-bold text-[#1A1A1A] font-heading">৪৮৪K+ ফলোয়ার</span>
+                <div className="flex items-center gap-1 text-[#133827]">
+                  <Star className="h-3.5 w-3.5 fill-current text-[#D4AF37]" />
+                  <span className="text-xs font-bold text-[#121815] font-heading">৪০৪K+ ফলোয়ার</span>
                 </div>
                 <p className="text-[10px] text-neutral-500">Facebook Community</p>
               </div>
 
-              <div className="space-y-0.5 border-x border-[#E8DFD3] px-3">
+              <div className="space-y-0.5 border-x border-[#E5DAC6] px-3">
                 <div className="flex items-center gap-1 text-[#D4AF37]">
                   <ShieldCheck className="h-3.5 w-3.5 fill-current" />
-                  <span className="text-xs font-bold text-[#1A1A1A] font-heading">১০০% খাঁটি মসলিন</span>
+                  <span className="text-xs font-bold text-[#121815] font-heading">১০০% প্রিমিয়াম শাড়ি</span>
                 </div>
-                <p className="text-[10px] text-neutral-500">তাঁত বুনন গ্যারান্টি</p>
+                <p className="text-[10px] text-neutral-500">সেরা মানের নিশ্চয়তা</p>
               </div>
 
               <div className="space-y-0.5">
                 <div className="flex items-center gap-1 text-emerald-600">
                   <ShoppingBag className="h-3.5 w-3.5" />
-                  <span className="text-xs font-bold text-[#1A1A1A] font-heading">ওপেন পার্সেল</span>
+                  <span className="text-xs font-bold text-[#121815] font-heading">ওপেন পার্সেল</span>
                 </div>
                 <p className="text-[10px] text-neutral-500">দেখে চেক করে পেমেন্ট</p>
               </div>
@@ -228,7 +229,7 @@ export function HeroCouture() {
           <div className="lg:col-span-7 order-1 lg:order-2">
             <div className="relative mx-auto max-w-xl lg:max-w-none">
               {/* Luxury Frame Glow */}
-              <div className="absolute -inset-2 rounded-[2rem] bg-gradient-to-tr from-[#8B0000]/20 via-[#D4AF37]/20 to-[#E85D75]/20 blur-xl opacity-70" />
+              <div className="absolute -inset-2 rounded-[2rem] bg-gradient-to-tr from-[#133827]/20 via-[#D4AF37]/20 to-[#1E5038]/20 blur-xl opacity-70" />
 
               {/* Main Image Viewport with Aspect Ratio */}
               <div className="relative aspect-[4/5] sm:aspect-[16/11] md:aspect-[4/5] lg:aspect-[16/12] w-full rounded-[1.75rem] overflow-hidden bg-neutral-900 border-2 border-white shadow-2xl">
@@ -250,85 +251,97 @@ export function HeroCouture() {
                       className="object-cover object-center"
                       sizes="(max-width: 768px) 100vw, 60vw"
                     />
+                    {/* Editorial Gradient Veil */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
                   </motion.div>
                 </AnimatePresence>
 
-                {/* Garment Interactive Hotspot */}
+                {/* Interactive Hotspot Pin on the Saree */}
                 <div
-                  className="absolute z-20"
                   style={{
                     left: `${activeSlide.hotspot.x}%`,
                     top: `${activeSlide.hotspot.y}%`,
                   }}
+                  className="absolute -translate-x-1/2 -translate-y-1/2 z-20 group/pin"
                 >
+                  {/* Radar Pulse Effect */}
+                  <span className="absolute -inset-2 rounded-full bg-[#D4AF37] opacity-75 animate-ping pointer-events-none" />
+
+                  {/* Interactive Button */}
                   <button
-                    onClick={() => setShowHotspotTooltip(!showHotspotTooltip)}
-                    className="relative flex items-center justify-center size-8 rounded-full bg-white text-[#1A1A1A] shadow-xl hover:scale-110 active:scale-95 transition-transform duration-300 ring-4 ring-[#D4AF37]/60 cursor-pointer"
-                    aria-label="View hotspot"
+                    onClick={handleHotspotClick}
+                    className="relative flex items-center justify-center size-9 md:size-10 rounded-full bg-white/95 backdrop-blur-md border-2 border-[#D4AF37] shadow-xl text-[#133827] hover:scale-110 transition-transform cursor-pointer"
+                    aria-label={`View ${activeSlide.hotspot.name}`}
                   >
-                    <span className="size-2.5 rounded-full bg-[#8B0000] animate-ping absolute" />
-                    <span className="size-2.5 rounded-full bg-[#8B0000] relative z-10" />
+                    <Eye className="h-4 w-4 text-[#133827]" />
                   </button>
 
-                  {/* Hotspot Floating Card Tooltip */}
-                  <AnimatePresence>
-                    {showHotspotTooltip && (
-                      <motion.div
-                        initial={{ opacity: 0, y: 10, scale: 0.95 }}
-                        animate={{ opacity: 1, y: 0, scale: 1 }}
-                        exit={{ opacity: 0, y: 8, scale: 0.95 }}
-                        transition={{ duration: 0.2 }}
-                        className="absolute left-1/2 -translate-x-1/2 top-10 w-64 p-3.5 rounded-2xl bg-white/95 backdrop-blur-xl border border-[#D4AF37]/40 shadow-2xl z-30"
-                      >
-                        <div className="flex items-start justify-between gap-2">
-                          <p className="text-[11px] font-bold text-[#1A1A1A] line-clamp-2 leading-snug">
-                            {activeSlide.hotspot.name}
-                          </p>
-                        </div>
-
-                        <div className="flex items-center gap-2 mt-2">
-                          <span className="text-sm font-bold text-[#8B0000] font-heading">
-                            ৳{activeSlide.hotspot.price.toLocaleString()}
+                  {/* Hotspot Floating Tooltip Card */}
+                  <div
+                    className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-56 sm:w-64 p-3 rounded-xl bg-white/95 backdrop-blur-xl border border-[#D4AF37]/50 shadow-2xl transition-all duration-300 pointer-events-auto z-30 ${
+                      showHotspotTooltip ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
+                    }`}
+                  >
+                    <div className="flex items-start gap-2.5">
+                      <div className="relative size-12 rounded-lg overflow-hidden shrink-0 border border-[#E5DAC6] bg-neutral-100">
+                        <Image
+                          src={activeSlide.image}
+                          alt={activeSlide.hotspot.name}
+                          fill
+                          unoptimized
+                          className="object-cover"
+                        />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <p className="text-[9px] uppercase tracking-wider font-bold text-[#D4AF37]">
+                          Featured Saree
+                        </p>
+                        <p className="text-xs font-bold text-[#121815] truncate font-heading">
+                          {activeSlide.hotspot.name}
+                        </p>
+                        <div className="flex items-baseline gap-2 mt-0.5">
+                          <span className="text-xs font-extrabold text-[#133827]">
+                            ৳{activeSlide.hotspot.price.toLocaleString("en-BD")}
                           </span>
                           <span className="text-[10px] text-neutral-400 line-through">
-                            ৳{activeSlide.hotspot.comparePrice.toLocaleString()}
+                            ৳{activeSlide.hotspot.comparePrice.toLocaleString("en-BD")}
                           </span>
                         </div>
+                      </div>
+                    </div>
 
-                        <button
-                          onClick={handleHotspotClick}
-                          className="mt-2.5 w-full py-1.5 rounded-lg bg-[#8B0000] hover:bg-[#6B0000] text-[#D4AF37] hover:text-white text-[10px] font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
-                        >
-                          <Eye className="h-3 w-3" />
-                          <span>Quick View &amp; Order</span>
-                        </button>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+                    <button
+                      onClick={handleHotspotClick}
+                      className="mt-2.5 w-full py-1.5 rounded-lg bg-[#133827] text-[#D4AF37] hover:text-white text-[10px] font-bold uppercase tracking-wider transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
+                    >
+                      <span>Quick View &amp; Order</span>
+                      <ArrowUpRight className="h-3 w-3" />
+                    </button>
+                  </div>
                 </div>
 
-                {/* Bottom Slide Switcher Controller */}
-                <div className="absolute bottom-4 inset-x-4 z-20 flex items-center justify-between p-2 rounded-xl bg-black/50 backdrop-blur-md border border-white/15 text-white">
-                  <div className="flex items-center gap-2">
+                {/* Bottom Slide Info overlay within the frame */}
+                <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white z-10 pointer-events-none">
+                  <div className="bg-black/60 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/20 text-[10px] sm:text-xs font-medium tracking-wide flex items-center gap-2">
+                    <span className="size-2 rounded-full bg-[#D4AF37] animate-pulse" />
+                    <span>TAFA Dhanmondi Flagship Collection</span>
+                  </div>
+
+                  {/* Slide Indicators Navigation */}
+                  <div className="flex items-center gap-1.5 pointer-events-auto bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/20">
                     {HERO_SLIDES.map((slide, idx) => (
                       <button
                         key={slide.id}
                         onClick={() => handleSlideChange(idx)}
-                        className={`px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider transition-all cursor-pointer ${
-                          idx === currentIdx
-                            ? "bg-[#8B0000] text-[#D4AF37] shadow-sm font-extrabold"
-                            : "text-white/70 hover:text-white hover:bg-white/10"
+                        className={`transition-all duration-300 rounded-full cursor-pointer ${
+                          currentIdx === idx
+                            ? "w-6 h-2 bg-[#D4AF37]"
+                            : "w-2 h-2 bg-white/40 hover:bg-white/70"
                         }`}
-                      >
-                        0{idx + 1}
-                      </button>
+                        aria-label={`Go to slide ${idx + 1}`}
+                      />
                     ))}
                   </div>
-
-                  <span className="text-[9.5px] tracking-widest uppercase font-mono text-[#D4AF37]">
-                    DUI KONNA • দুই কন্যা
-                  </span>
                 </div>
               </div>
             </div>

@@ -100,7 +100,7 @@ export function LookbookSection({ looks }: LookbookSectionProps) {
           <motion.div variants={leftColumnVariants} className="col-span-5 space-y-7 z-10">
             <div className="space-y-3">
               <p className="text-[10px] uppercase tracking-[0.25em] text-accent font-bold">
-                DUI KONNA EDITORIALS
+                TAFA EDITORIALS
               </p>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground font-heading leading-tight">
                 Hand-Picked <br /> Showcase
@@ -194,7 +194,7 @@ export function LookbookSection({ looks }: LookbookSectionProps) {
         <div className="block lg:hidden space-y-6">
           <div className="text-center space-y-1">
             <p className="text-[10px] uppercase tracking-[0.25em] text-accent font-bold">
-              DUI KONNA EDITORIALS
+              TAFA EDITORIALS
             </p>
             <h2 className="text-2xl font-bold tracking-tight text-foreground font-heading">
               Hand-Picked Showcase

@@ -40,12 +40,12 @@ export function BlossomPetalsOverlay() {
 
     window.addEventListener("resize", handleResize);
 
-    // Dui Konna (দুই কন্যা) royal crimson, warm gold & pearl shimmer palette
+    // TAFA (তাফা) royal emerald green, imperial gold & silk shimmer palette
     const petalColors = [
-      "rgba(139, 0, 0, 0.35)",   // Royal Crimson silk shimmer
-      "rgba(212, 175, 55, 0.40)", // Imperial Gold luster
-      "rgba(250, 246, 240, 0.50)",// Warm Cream pearl mist
-      "rgba(180, 20, 40, 0.30)",  // Velvet red glow
+      "rgba(19, 56, 39, 0.35)",   // Royal Emerald silk shimmer
+      "rgba(212, 175, 55, 0.45)", // Imperial Gold luster
+      "rgba(250, 247, 242, 0.50)",// Warm Cream silk mist
+      "rgba(14, 41, 28, 0.30)",   // Deep Forest Emerald glow
     ];
 
     const PETAL_COUNT = Math.min(22, Math.floor(width / 60));

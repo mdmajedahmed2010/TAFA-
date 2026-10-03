@@ -1,5 +1,5 @@
 /**
- * Dui Konna (দুই কন্যা) — PDF Invoice Generator
+ * TAFA | Dhaka (তাফা) — PDF Invoice Generator
  * Generates a branded luxury PDF invoice for orders
  */
 

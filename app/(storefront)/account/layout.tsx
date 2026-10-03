@@ -1,5 +1,5 @@
 /**
- * Dui Konna (দুই কন্যা) — Account Layout
+ * TAFA | Dhaka (তাফা) — Account Layout
  * Sidebar navigation (desktop) + tabs (mobile)
  */
 

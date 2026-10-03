@@ -1,5 +1,5 @@
 /**
- * Dui Konna (দুই কন্যা) — Login Page
+ * TAFA | Dhaka (তাফা) — Login Page
  * Route: /login
  */
 
@@ -24,17 +24,17 @@ export default function LoginPage() {
           <Link href="/" className="inline-flex flex-col items-center gap-2 group">
             <div className="relative size-14 rounded-full overflow-hidden border border-[#D4AF37]/50 shadow-xs">
               <Image
-                src="/duikonna-assets/fb_logo_square.jpg"
+                src="/tafa-assets/logo.png"
                 alt={BUSINESS.NAME}
                 fill
                 className="object-cover"
               />
             </div>
-            <span className="text-xl font-bold tracking-tight text-[#8B0000] font-serif group-hover:text-[#5A0000] transition-colors">
+            <span className="text-xl font-bold tracking-tight text-[#133827] font-serif group-hover:text-[#0A1F16] transition-colors">
               {BUSINESS.NAME}
             </span>
           </Link>
-          <h1 className="text-xl font-bold text-[#181513] font-serif">Welcome Back</h1>
+          <h1 className="text-xl font-bold text-[#121815] font-serif">Welcome Back</h1>
           <p className="text-xs text-neutral-500">Sign in to your account to track orders and rewards</p>
         </div>
 
@@ -56,7 +56,7 @@ export default function LoginPage() {
           Don&apos;t have an account?{" "}
           <Link
             href="/register"
-            className="font-bold text-[#8B0000] hover:underline underline-offset-4"
+            className="font-bold text-[#133827] hover:underline underline-offset-4"
           >
             Create account
           </Link>

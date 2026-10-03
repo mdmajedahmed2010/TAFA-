@@ -1,9 +1,10 @@
 import { ProductStatus } from '@prisma/client';
 import { prisma } from '../lib/db';
 import { DEMO_CATEGORIES, DEMO_PRODUCTS } from '../lib/demo-data';
+import { BUSINESS } from '../lib/constants';
 
 async function main() {
-  console.log("Start seeding for Dui Konna (দুই কন্যা)...");
+  console.log("Start seeding for TAFA | Dhaka (তাফা)...");
 
   // Clean up existing data
   await prisma.productVariant.deleteMany({});
@@ -40,21 +41,21 @@ async function main() {
       data: {
         name: pData.name,
         slug: pData.slug,
-        description: `${pData.description} — দুই কন্যা (Dui Konna), নিকুঞ্জ-২, খিলক্ষেত, ঢাকা-১২২৯। ১০০% খাঁটি ঐতিহ্যবাহী ঢাকাই মসলিন ও লাক্সারি শাড়ি। পার্সেল খুলে দেখে পেমেন্ট ও শোরুম ট্রায়ালের শতভাগ নিশ্চিন্ত সুবিধা।`,
+        description: `${pData.description} — ${BUSINESS.NAME} (${BUSINESS.NAME_BN}), ${BUSINESS.ADDRESS}। সবচেয়ে রিজনেবল প্রাইসে প্রিমিয়াম শাড়ির নিশ্চয়তা। পার্সেল খুলে দেখে পেমেন্ট ও শোরুম ট্রায়ালের শতভাগ নিশ্চিন্ত সুবিধা।`,
         basePrice: pData.price,
         categoryId: categoryId,
         status: ProductStatus.ACTIVE,
         isFeatured: pData.isFeatured ?? true,
-        seoTitle: `${pData.name} | Dui Konna (দুই কন্যা)`,
-        seoDesc: `Buy authentic ${pData.name} online from Dui Konna (দুই কন্যা), Nikunja-2, Dhaka. Pure handwoven Dhakai Muslin & luxury sarees with nationwide Open Parcel Cash on Delivery.`,
-        ogImage: pData.images[0] || '/duikonna-assets/fb_cover_landscape.jpg',
+        seoTitle: `${pData.name} | ${BUSINESS.NAME} (${BUSINESS.NAME_BN})`,
+        seoDesc: `Buy authentic ${pData.name} online from ${BUSINESS.NAME} (${BUSINESS.NAME_BN}), Dhanmondi, Dhaka. Premium quality sarees with nationwide Open Parcel Cash on Delivery.`,
+        ogImage: pData.images[0] || '/tafa-assets/fb_cover_landscape.jpg',
         variants: {
           create: (pData.variants || []).map((v: any, idx: number) => ({
-            sku: `DK-${String(i + 1).padStart(3, '0')}-${idx + 1}`,
-            size: v.size || '12-Haat Handwoven Muslin Saree with Unstitched Blouse Piece',
+            sku: `TAFA-${String(i + 1).padStart(3, '0')}-${idx + 1}`,
+            size: v.size || '12-Haat Premium Saree with Unstitched Blouse Piece',
             color: v.color || 'As Pictured',
             price: v.price || pData.price,
-            stock: v.stock || 15,
+            stock: v.stock || 20,
             images: v.images || pData.images,
           })),
         },
@@ -63,7 +64,7 @@ async function main() {
     console.log(`Created product: ${product.name}`);
   }
 
-  console.log("✅ Dui Konna (দুই কন্যা) Database Seeding Completed Successfully!");
+  console.log("✅ TAFA | Dhaka (তাফা) Database Seeding Completed Successfully!");
 }
 
 main()

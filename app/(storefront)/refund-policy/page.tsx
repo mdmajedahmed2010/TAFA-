@@ -5,38 +5,38 @@ import { BUSINESS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Open Parcel & Refund Policy | ${BUSINESS.NAME} (${BUSINESS.NAME_BN})`,
   description:
-    "Dui Konna's signature Open Parcel Inspection Guarantee, Return & Exchange guidelines, and Cash on Delivery terms across Bangladesh.",
+    "TAFA's signature Open Parcel Inspection Guarantee, Return & Exchange guidelines, and Cash on Delivery terms across Bangladesh.",
 };
 
 const policyPoints = [
   {
     icon: Eye,
     title: "Open Parcel Policy — ডেলিভারিতে শাড়ি চেক করার পূর্ণ স্বাধীনতা",
-    body: `You have to check products in front of the delivery man. ডেলিভারি ম্যানের সামনে পার্সেলের প্যাকেট খুলে ঢাকাই মসলিনের রেশমি কাপড়, আঁচলের জরি, পাড় ও ব্লাউজ পিস ভালোভাবে দেখে নিশ্চিত হয়ে নিন। কোনো অসঙ্গতি বা অমিল দেখলে সাথে সাথে আমাদের হটলাইন ${BUSINESS.PHONE} অথবা ${BUSINESS.PHONE_ALT}-এ কল করুন।`,
+    body: `You have to check products in front of the delivery man. ডেলিভারিম্যানের সামনে পার্সেলের প্যাকেট খুলে শাড়ির কাপড়, প্রিন্ট, রঙ, আঁচল ও ব্লাউজ পিস ভালোভাবে দেখে নিশ্চিত হয়ে নিন। কোনো অসঙ্গতি বা অমিল দেখলে সাথে সাথে আমাদের হটলাইন ${BUSINESS.PHONE} অথবা ${BUSINESS.PHONE_ALT}-এ কল করুন।`,
     type: "warning",
   },
   {
     icon: CheckCircle2,
-    title: "১০০% খাঁটি তাঁতে বোনা ঢাকাই মসলিন ও জামদানি",
-    body: `${BUSINESS.NAME}-এর প্রতিটি শাড়ি খাঁটি ঐতিহ্যবাহী তাঁতিদের হাতে বোনা। এক্সক্লুসিভ ঢাকাই মসলিন, ব্রাইডাল লাল মসলিন, জামদানি ও লাক্সারি কারচুপি শাড়ির গুণগত মানের ব্যাপারে কোনো আপস করা হয় না। প্রতিটি শাড়ির গায়ে সঠিক মূল্য স্পষ্ট মুদ্রিত থাকে।`,
+    title: "১০০% রিজনেবল প্রাইস ও অরিজিনাল কোয়ালিটি",
+    body: `${BUSINESS.NAME}-এর প্রতিটি শাড়ি উন্নতমানের কাপড় ও নিখুঁত ফিনিশিংয়ে তৈরি। কালামকারি কটন সিল্ক, ফেস্টিভ টিস্যু কাতান, কোটা ডোরিয়া এবং এক্সক্লুসিভ ডিজাইনার শাড়ির গুণগত মানের ব্যাপারে আমরা শতভাগ প্রতিশ্রুতিবদ্ধ। প্রতিটি শাড়ির মূল্য সম্পূর্ণ ন্যায্য ও সাশ্রয়ী।`,
     type: "success",
   },
   {
     icon: Store,
-    title: "নিকুঞ্জ-২ শোরুমে ৭ দিনের এক্সচেঞ্জ সুবিধা",
-    body: `অব্যবহৃত, মূল ভাঁজ ও ট্যাগসহ থাকা শাড়ি ডেলিভারি গ্রহণের ৭ দিনের মধ্যে আমাদের নিকুঞ্জ-২ ফ্ল্যাগশিপ শোরুমে (${BUSINESS.ADDRESS}) নিয়ে এসে পছন্দমতো যেকোনো সমমূল্যের শাড়ির সাথে এক্সচেঞ্জ করে নিতে পারবেন।`,
+    title: "ধানমন্ডি ৫ শোরুমে ৩ দিনের এক্সচেঞ্জ সুবিধা",
+    body: `অব্যবহৃত, মূল ভাঁজ ও ট্যাগসহ থাকা শাড়ি ডেলিভারি গ্রহণের ৩ দিনের মধ্যে আমাদের ধানমন্ডি ৫ ফ্ল্যাগশিপ শোরুমে (${BUSINESS.ADDRESS}) নিয়ে এসে পছন্দমতো যেকোনো সমমূল্যের শাড়ির সাথে এক্সচেঞ্জ করে নিতে পারবেন।`,
     type: "info",
   },
   {
     icon: Truck,
     title: "ডেলিভারি চার্জ ও ফ্রি ডেলিভারি অফার",
-    body: `ঢাকা সিটির ভিতরে ডেলিভারি চার্জ মাত্র ৳${BUSINESS.DELIVERY_CHARGE_INSIDE} (২৪-৪৮ ঘণ্টার মধ্যে)। ঢাকার বাইরে সারা বাংলাদেশে ৳${BUSINESS.DELIVERY_CHARGE_OUTSIDE} (২-৩ কার্যদিবসের মধ্যে)। যেকোনো ২ বা ততোধিক শাড়ি অর্ডারে সারা দেশে ডেলিভারি সম্পূর্ণ ফ্রি! ক্যাশ অন ডেলিভারি (COD) প্রযোজ্য।`,
+    body: `ঢাকা সিটির ভিতরে ডেলিভারি চার্জ মাত্র ৳${BUSINESS.DELIVERY_CHARGE_INSIDE} (২৪-৪৮ ঘণ্টার মধ্যে)। ঢাকার বাইরে সারা বাংলাদেশে ৳${BUSINESS.DELIVERY_CHARGE_OUTSIDE} (২-৪ কার্যদিবসের মধ্যে)। যেকোনো ২ বা ততোধিক শাড়ি অর্ডারে সারা দেশে ডেলিভারি সম্পূর্ণ ফ্রি! ক্যাশ অন ডেলিভারি (COD) প্রযোজ্য।`,
     type: "info",
   },
   {
     icon: ShieldCheck,
     title: "অন-স্পট রিটার্ন ও সুরক্ষা নীতিমালা",
-    body: "ডেলিভারি ম্যানের সামনে চেক করার পর যদি পণ্যে কোনো ডিফেক্ট বা রঙের বড় ধরণের অমিল থাকে, তবে আপনি ডেলিভারিম্যানকে উপস্থিত রেখে সাথে সাথে পার্সেল রিটার্ন করতে পারবেন (প্রযোজ্য ক্ষেত্রে কেবল কুরিয়ার চার্জ দিয়ে)। কোনো রাইডার সমস্যা করলে সাথে সাথে আমাদের হটলাইনে কল দিন।",
+    body: "ডেলিভারিম্যানের সামনে চেক করার পর যদি পণ্যে কোনো ডিফেক্ট বা রঙের বড় ধরণের অমিল থাকে, তবে আপনি ডেলিভারিম্যানকে উপস্থিত রেখে সাথে সাথে পার্সেল রিটার্ন করতে পারবেন (প্রযোজ্য ক্ষেত্রে কেবল কুরিয়ার চার্জ দিয়ে)। কোনো রাইডার সমস্যা করলে সাথে সাথে আমাদের হটলাইনে কল দিন।",
     type: "warning",
   },
 ];
@@ -45,9 +45,9 @@ export default function RefundPolicyPage() {
   return (
     <main className="min-h-screen bg-[#FAF7F2]">
       {/* Page Header */}
-      <section className="bg-[#8B0000] py-16 md:py-24 px-6 text-center relative overflow-hidden">
+      <section className="bg-[#133827] py-16 md:py-24 px-6 text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none">
-          <div className="absolute top-0 left-0 w-80 h-80 rounded-full bg-[#8B0000] -translate-x-1/2 -translate-y-1/2 blur-2xl" />
+          <div className="absolute top-0 left-0 w-80 h-80 rounded-full bg-[#133827] -translate-x-1/2 -translate-y-1/2 blur-2xl" />
           <div className="absolute bottom-0 right-0 w-80 h-80 rounded-full bg-[#D4AF37] translate-x-1/2 translate-y-1/2 blur-2xl" />
         </div>
         <div className="relative z-10 max-w-2xl mx-auto space-y-4">
@@ -65,12 +65,12 @@ export default function RefundPolicyPage() {
       </section>
 
       {/* Main Alert */}
-      <section className="bg-[#6B0000] py-4 px-6 border-t border-[#D4AF37]/30">
+      <section className="bg-[#0E291C] py-4 px-6 border-t border-[#D4AF37]/30">
         <div className="max-w-3xl mx-auto">
           <div className="flex items-center gap-3 justify-center flex-wrap text-center">
             <CheckCircle2 className="h-5 w-5 text-[#D4AF37] shrink-0" />
             <p className="text-[#FAF7F2] text-sm font-bold tracking-wide">
-              ১০০% সততা ও ওপেন পার্সেল চেকিং — পার্সেল খুলে দেখে বুঝে নিন আপনার পছন্দের ঢাকাই মসলিন শাড়ি
+              ১০০% সততা ও ওপেন পার্সেল চেকিং — পার্সেল খুলে দেখে বুঝে নিন আপনার পছন্দের প্রিমিয়াম শাড়ি
             </p>
             <CheckCircle2 className="h-5 w-5 text-[#D4AF37] shrink-0" />
           </div>
@@ -89,8 +89,8 @@ export default function RefundPolicyPage() {
                   point.type === "warning"
                     ? "bg-amber-50/80 border-amber-200 border-l-4 border-l-amber-500"
                     : point.type === "success"
-                    ? "bg-rose-50/80 border-rose-200 border-l-4 border-l-[#8B0000]"
-                    : "bg-white border-[#E8DFD5] border-l-4 border-l-[#8B0000]"
+                    ? "bg-emerald-50/80 border-emerald-200 border-l-4 border-l-[#133827]"
+                    : "bg-white border-[#E8DFD5] border-l-4 border-l-[#133827]"
                 }`}
               >
                 <div
@@ -98,7 +98,7 @@ export default function RefundPolicyPage() {
                     point.type === "warning"
                       ? "bg-amber-100 text-amber-800"
                       : point.type === "success"
-                      ? "bg-rose-100 text-[#8B0000]"
+                      ? "bg-emerald-100 text-[#133827]"
                       : "bg-[#FAF7F2] text-[#1A1A1A] border border-[#E8DFD5]"
                   }`}
                 >
@@ -114,7 +114,7 @@ export default function RefundPolicyPage() {
                         point.type === "warning"
                           ? "text-amber-900"
                           : point.type === "success"
-                          ? "text-[#8B0000]"
+                          ? "text-[#133827]"
                           : "text-[#1A1A1A]"
                       }`}
                     >
@@ -146,7 +146,7 @@ export default function RefundPolicyPage() {
               </a>
               <a
                 href={`tel:${BUSINESS.PHONE}`}
-                className="inline-flex items-center justify-center gap-2 h-12 px-7 border-2 border-[#8B0000] text-[#8B0000] text-xs font-bold uppercase tracking-[0.14em] rounded-full hover:bg-[#8B0000] hover:text-white transition-all"
+                className="inline-flex items-center justify-center gap-2 h-12 px-7 border-2 border-[#133827] text-[#133827] text-xs font-bold uppercase tracking-[0.14em] rounded-full hover:bg-[#133827] hover:text-white transition-all"
               >
                 <Phone className="h-4 w-4" />
                 <span>Call Hotline ({BUSINESS.PHONE})</span>

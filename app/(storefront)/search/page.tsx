@@ -52,7 +52,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
     const image =
       Array.isArray(variantImages) && variantImages.length > 0
         ? variantImages[0]
-        : "/duikonna-assets/product-03-royal-yellow.jpg";
+        : "/tafa-assets/473729906_122137976936551800_4469796677943567704_n.jpg";
 
     const variantPrice = p.variants?.[0]?.price ? Number(p.variants[0].price) : Number(p.basePrice);
 
@@ -63,7 +63,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
       price: variantPrice,
       compareAtPrice: Math.round(variantPrice * 1.2),
       image,
-      category: p.category?.name || "Dui Konna Saree Collection",
+      category: p.category?.name || "TAFA Saree Collection",
       isNew: p.isFeatured,
     };
   });
@@ -73,13 +73,13 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
       <Breadcrumb items={[{ label: "Search" }]} />
 
       <div className="mt-6 mb-8 text-center max-w-2xl mx-auto">
-        <h1 className="text-3xl md:text-4xl font-bold tracking-tight font-serif text-[#1A1A1A]">
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight font-serif text-[#121815]">
           {query ? `Search Results for "${query}"` : "Explore Catalog"}
         </h1>
         <p className="text-xs md:text-sm text-neutral-500 mt-2">
           {query
             ? `Found ${mappedProducts.length} ${mappedProducts.length === 1 ? "item" : "items"} matching your query.`
-            : "Use the search bar above to discover Dhakai Muslin, Dhakai Jamdani, Bridal Sarees, and Luxury Karchupi."}
+            : "Use the search bar above to discover Kalamkari, Tissue Katan, Kota Doria, and Tissue Silk Sarees."}
         </p>
       </div>
 

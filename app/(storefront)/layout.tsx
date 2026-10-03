@@ -1,5 +1,5 @@
 /**
- * Dui Konna (দুই কন্যা) — Storefront Layout
+ * TAFA | Dhaka (তাফা) — Storefront Layout
  * Wraps all public-facing pages with Header + Footer + Mobile Bottom Nav + StorefrontOverlays
  */
 
@@ -39,7 +39,7 @@ function MaintenancePage() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#FAF7F2] px-4 text-center">
       <div className="max-w-md w-full space-y-6">
-        <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-[#8B0000]/10 text-[#8B0000] mb-2">
+        <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-[#133827]/10 text-[#133827] mb-2">
           <svg className="h-8 w-8 animate-spin" fill="none" viewBox="0 0 24 24">
             <circle
               className="opacity-25"

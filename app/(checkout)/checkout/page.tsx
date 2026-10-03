@@ -1,5 +1,5 @@
 /**
- * Dui Konna (দুই কন্যা) — Checkout Page
+ * TAFA | Dhaka (তাফা) — Checkout Page
  * Guest-first checkout flow (no login required)
  * Nationwide Cash on Delivery & Open Parcel Inspection
  */

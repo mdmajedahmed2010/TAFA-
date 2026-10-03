@@ -2,10 +2,9 @@
 "use client";
 
 /**
- * Dui Konna (দুই কন্যা) — Haute Couture Storefront Orchestrator
- * Authentic Dhakai Muslin Sarees, Dhakai Jamdani & Luxury Karchupi
- * Official: https://www.facebook.com/duikonna01 (484,000+ Community)
- * All authentic assets served locally from /duikonna-assets/
+ * TAFA (তাফা) — Haute Storefront Orchestrator
+ * House 42/1, Road 5, Dhanmondi, Dhaka 1209 • FB: https://www.facebook.com/tafatonzehee
+ * 404,000+ Followers • "সবচেয়ে রিজনেবল প্রাইসে প্রিমিয়াম শাড়ির সমাহার"
  */
 
 import { BlossomPetalsOverlay } from "@/components/effects/blossom-petals";
@@ -18,13 +17,13 @@ import { HeritageCouture } from "@/components/home/heritage-couture";
 import { CommunityStories } from "@/components/home/community-stories";
 import { ASSETS, ALL_PRODUCTS } from "@/lib/demo-data";
 
-/* ──────────────── Default Curated Catalog — Dui Konna (দুই কন্যা) ──────────────── */
+/* ──────────────── Default Curated Catalog — TAFA (তাফা) ──────────────── */
 const DEFAULT_PRODUCTS: CuratedProduct[] = ALL_PRODUCTS.map((p) => ({
   id: p.id,
   name: p.name,
-  category: p.category || "Exclusive Muslin Saree",
+  category: p.category || "Kalamkari Saree",
   price: p.price,
-  compareAtPrice: p.compareAtPrice ?? Math.round(p.price * 1.12),
+  compareAtPrice: p.compareAtPrice ?? Math.round(p.price * 1.15),
   image: p.image,
   secondaryImage: p.images && p.images.length > 1 ? p.images[1]! : p.image,
   slug: p.slug,
@@ -42,15 +41,15 @@ export function HomeUI({
   const mappedProducts: CuratedProduct[] =
     dbProducts && dbProducts.length > 0
       ? dbProducts.map((p: any) => {
-          const img = p.variants?.[0]?.images?.[0] || ASSETS.product3;
+          const img = p.variants?.[0]?.images?.[0] || ASSETS.kalamkariBlack;
           const secImg = p.variants?.[0]?.images?.[1] || img;
           const pPrice = Number(p.variants?.[0]?.price ?? p.basePrice);
           return {
             id: p.id,
             name: p.name,
-            category: p.category?.name || "Exclusive Muslin Saree",
+            category: p.category?.name || "Kalamkari Saree",
             price: pPrice,
-            compareAtPrice: Math.round(pPrice * 1.12),
+            compareAtPrice: Math.round(pPrice * 1.15),
             image: img,
             secondaryImage: secImg,
             slug: p.slug,
@@ -68,7 +67,7 @@ export function HomeUI({
       {/* 2. Cinematic Haute Couture Hero with Interactive Hotspots */}
       <HeroCouture />
 
-      {/* 3. Open Parcel Guarantee & 484K+ Community Trust Badges */}
+      {/* 3. Open Parcel Guarantee & 404K+ Community Trust Badges */}
       <TrustBadges />
 
       {/* 4. Asymmetric Magazine Bento Showcase */}
@@ -80,7 +79,7 @@ export function HomeUI({
       {/* 6. Interactive "Shop The Look" Lookbook with Saree Drape Pins */}
       <LookbookCouture />
 
-      {/* 7. Brand Heritage & 484,000+ Community Social Proof */}
+      {/* 7. Brand Heritage & 404,000+ Community Social Proof */}
       <HeritageCouture />
 
       {/* 8. Community Stories & Verified Customer Love */}

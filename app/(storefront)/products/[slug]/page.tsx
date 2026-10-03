@@ -1,5 +1,5 @@
 /**
- * Dui Konna (দুই কন্যা) — Product Detail Page
+ * TAFA | Dhaka (তাফা) — Product Detail Page
  * Route: /products/[slug]
  */
 
@@ -33,8 +33,8 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
         product: {
           name: demoProduct.name,
           seoTitle: `${demoProduct.name} — ${BUSINESS.NAME}`,
-          seoDesc: `${demoProduct.name} — Authentic handwoven Dhakai Muslin & luxury saree by ${BUSINESS.NAME}.`,
-          description: `${demoProduct.name} — Handcrafted Dhakai Muslin & luxury saree collection by ${BUSINESS.NAME}.`,
+          seoDesc: `${demoProduct.name} — Authentic saree by ${BUSINESS.NAME} (${BUSINESS.NAME_BN}).`,
+          description: `${demoProduct.name} — Premium saree collection by ${BUSINESS.NAME}.`,
         } as any,
       };
     }
@@ -72,18 +72,18 @@ export default async function ProductPage({ params }: ProductPageProps) {
           id: demoProduct.id,
           name: demoProduct.name,
           slug: demoProduct.slug,
-          description: `${demoProduct.name} — ${(demoProduct as any).description || `খাঁটি ঢাকাই মসলিন ও ঐতিহ্যবাহী শাড়ি কালেকশন — ${BUSINESS.NAME}। স্বত্বাধিকারী শামীমা নাসরিনের কিউরেটেড কালেকশন, নিকুঞ্জ-২ শোরুমের নির্ভরযোগ্যতা এবং সারা দেশে ক্যাশ অন হোম ডেলিভারিতে ওপেন পার্সেল সুবিধা।`}`,
+          description: `${demoProduct.name} — ${(demoProduct as any).description || `সবচেয়ে রিজনেবল প্রাইসে প্রিমিয়াম শাড়ির সমাহার — ${BUSINESS.NAME}। ধানমন্ডি ৫ ফ্ল্যাগশিপ শোরুমের নির্ভরযোগ্যতা এবং সারা দেশে ক্যাশ অন হোম ডেলিভারিতে ওপেন পার্সেল সুবিধা।`}`,
           basePrice: demoProduct.price,
           category: {
-            name: demoProduct.category || "Dhakai Muslin Saree",
-            slug: (demoProduct.category || "Dhakai Muslin Saree").toLowerCase().replace(/[^a-z0-9]+/g, "-"),
+            name: demoProduct.category || "Kalamkari Saree",
+            slug: (demoProduct.category || "kalamkari-cotton").toLowerCase().replace(/[^a-z0-9]+/g, "-"),
           },
           variants: [
             {
               id: demoProduct.id + "-v1",
               sku: demoProduct.id,
               price: demoProduct.price,
-              stock: 15,
+              stock: 20,
               images: demoProduct.images || [demoProduct.image],
             },
           ],
@@ -110,7 +110,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
   const images: string[] =
     Array.isArray(variantImages) && variantImages.length > 0
       ? (variantImages as string[])
-      : [ASSETS.sareeChampagne];
+      : [ASSETS.kalamkariBlack];
 
   // Compute compareAtPrice as a dynamic fallback
   const prices = product.variants.map((v) => Number(v.price));
@@ -120,7 +120,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
   // Map DB variants to ProductInfo expected format
   const mappedVariants = product.variants.map((v) => ({
     id: v.id,
-    size: v.size || "12-Haat Handwoven Muslin Saree with Unstitched Blouse Piece",
+    size: v.size || "12-Haat Saree with Matching Unstitched Blouse Piece",
     color: v.color || "As Pictured",
     price: Number(v.price),
     stock: v.stock,
@@ -135,8 +135,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
     basePrice: minPrice,
     compareAtPrice,
     category: {
-      name: product.category?.name || "Dhakai Muslin Saree",
-      slug: product.category?.slug || "dhakai-muslin-saree",
+      name: product.category?.name || "Kalamkari Saree",
+      slug: product.category?.slug || "kalamkari-cotton",
     },
     images,
     ogImage: product.ogImage,

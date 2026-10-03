@@ -1,5 +1,5 @@
 /**
- * Dui Konna (দুই কন্যা) — All Categories Page
+ * TAFA | Dhaka (তাফা) — All Categories Page
  * Route: /categories
  */
 
@@ -16,7 +16,7 @@ export const revalidate = 60;
 export const metadata: Metadata = {
   title: `All Collections & Categories — ${BUSINESS.NAME}`,
   description:
-    `Browse all ${BUSINESS.NAME} authentic Dhakai Muslin & luxury saree categories — Pure Handwoven Muslin, Dhakai Jamdani, Bridal Red Muslin, Luxury Karchupi & Pastel Heritage.`,
+    `Browse all ${BUSINESS.NAME} authentic saree categories — Kalamkari Cotton, Tissue Katan, Kota Doria, Tissue Silk, Semi-Silk & Exclusive Organza at the most reasonable prices.`,
 };
 
 type CategoryItem = {
@@ -61,15 +61,15 @@ export default async function CategoriesPage() {
 
         {/* Luxury Header */}
         <div className="mt-10 mb-14 text-center">
-          <span className="inline-block px-3.5 py-1 rounded-full border border-[#8B0000]/30 bg-[#8B0000]/5 text-[#8B0000] text-[10px] uppercase tracking-[0.28em] font-bold mb-4">
-            ✦ DUI KONNA (দুই কন্যা) ✦
+          <span className="inline-block px-3.5 py-1 rounded-full border border-[#133827]/30 bg-[#133827]/5 text-[#133827] text-[10px] uppercase tracking-[0.28em] font-bold mb-4">
+            ✦ TAFA (তাফা) ✦
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#8B0000] font-serif">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#133827] font-serif">
             All Categories
           </h1>
           <div className="w-20 h-[2px] bg-[#D4AF37] mx-auto mt-5" />
           <p className="text-neutral-700 mt-4 text-sm md:text-base max-w-xl mx-auto font-sans">
-            ১০০% খাঁটি ঐতিহ্যবাহী ঢাকাই মসলিন, রাজকীয় ব্রাইডাল রেড, হাতে বোনা জামদানি এবং এক্সক্লুসিভ কারচুপি কাজের শাড়ির পূর্ণাঙ্গ কালেকশন।
+            সবচেয়ে রিজনেবল প্রাইসে প্রিমিয়াম কালামকারী সুতি, টিস্যু কাতান, কোটা ডোরিয়া এবং উৎসব স্পেশাল টিস্যু সিল্ক শাড়ির পূর্ণাঙ্গ সম্ভার।
           </p>
         </div>
 

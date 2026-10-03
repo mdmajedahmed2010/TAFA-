@@ -1,9 +1,9 @@
 "use client";
 
 /**
- * Dui Konna (দুই কন্যা) — Community Stories & Verified Customer Love
- * Genuine reviews and Open Parcel satisfaction from 484,000+ sisters across Bangladesh.
- * Official Facebook: https://www.facebook.com/duikonna01
+ * TAFA (তাফা) — Community Stories & Verified Customer Love
+ * Genuine reviews and Open Parcel satisfaction from 404,000+ sisters across Bangladesh.
+ * Official Facebook: https://www.facebook.com/tafatonzehee
  */
 
 import { useState } from "react";
@@ -24,42 +24,42 @@ interface StoryHighlight {
 const STORIES: StoryHighlight[] = [
   {
     id: "story-1",
-    name: "Farzana Rahman",
-    location: "Gulshan-2, Dhaka",
-    image: ASSETS.product3,
+    name: "Nusrat Jahan",
+    location: "Dhanmondi, Dhaka",
+    image: ASSETS.tissueKatanGold,
     quote:
-      "দুই কন্যা (Dui Konna) থেকে হলুদ ঢাকাই মসলিন শাড়িটি নিয়েছিলাম। পেজের ভিডিওতে যেমন নিখুঁত জরি ও বুনন দেখেছি, বাস্তবে হাতে পেয়ে তার চেয়েও বেশি অভিজাত লেগেছে। শাড়ির গায়ে স্পষ্ট দাম মুদ্রিত থাকায় কোনো লুকোচুরি নেই। ডেলিভারিম্যানের সামনে ওপেন পার্সেল চেক করে নেওয়ার সুবিধায় আমি ১০০% সন্তুষ্ট!",
-    product: "Royal Yellow Dhakai Muslin Saree (৳29,000)",
+      "TAFA-র ধানমন্ডি ৫ শোরুমে (বাড়ি নং ৪২/১) গিয়ে এই গোল্ডেন ফেস্টিভ টিস্যু কাতান শাড়িটি কিনেছিলাম। এত চমৎকার ফিনিশিং ও প্রিমিয়াম লুক কিন্তু দাম মাত্র ৩,৪৫০ টাকা! সবচেয়ে রিজনেবল প্রাইসে এমন গর্জিয়াস শাড়ি আসলেই বিরল।",
+    product: "Festive Pure Gold Tissue Katan (৳3,450)",
     rating: 5,
   },
   {
     id: "story-2",
-    name: "Tanzila Haque",
-    location: "Dhanmondi, Dhaka",
-    image: ASSETS.product8,
+    name: "Sumaiya Akhter",
+    location: "Uttara, Dhaka",
+    image: ASSETS.royalBlueFloral,
     quote:
-      "ডাস্টি লিলাক লাক্সারি কারচুপি শাড়িটি পরে পারিবারিক রিসেপশন পার্টিতে গিয়েছিলাম। সবাই জানতে চেয়েছে কোথা থেকে নিয়েছি। হাতে বোনা নিখুঁত কারচুপি কাজ ও প্রিমিয়াম কাপড়ের ফল ও ড্র্যাপিং অসাধারণ!",
-    product: "Dusty Lilac Luxury Karchupi Saree",
+      "অনলাইনে রয়্যাল ব্লু ফ্লোরাল সিল্ক শাড়িটি অর্ডার করেছিলাম। ডেলিভারিম্যানের সামনে প্যাকেট খুলে চেক করার পরেই পেমেন্ট করেছি। কাপড়ের কোয়ালিটি ও শাড়ির ফল এক কথায় দারুণ! TAFA-র সার্ভিস সত্যি প্রশংসনীয়।",
+    product: "Royal Sapphire Blue Floral Silk Saree (৳2,650)",
     rating: 5,
   },
   {
     id: "story-3",
-    name: "Sadia Mehzabin",
+    name: "Farhana Chowdhury",
     location: "Panchlaish, Chattogram",
-    image: ASSETS.heroBanner,
+    image: ASSETS.kalamkariBlack,
     quote:
-      "গাঢ় লাল ব্রাইডাল মসলিন শাড়িটি আমার পানচিনির অনুষ্ঠানের জন্য কিনেছিলাম। শামীমা নাসরিন আপুর পেজে কথা বলার পর খুব দ্রুত সাপোর্ট পেয়েছি। ঢাকার বাইরেও ২ দিনের মধ্যে নিখুঁতভাবে ডেলিভারি পেয়েছি।",
-    product: "Royal Crimson Bridal Muslin Saree",
+      "কালামকারি কটন সিল্ক শাড়িটি মাত্র ২ দিনে চিটাগংয়ে হোম ডেলিভারি পেয়েছি। হাতে আঁকা ময়ূর ও হাতির নকশা আর কনট্রাস্ট আঁচলটি অসাধারণ। উৎসবের জন্য এক কথায় নিখুঁত!",
+    product: "Midnight Black Kalamkari Saree (৳1,850)",
     rating: 5,
   },
   {
     id: "story-4",
-    name: "Rubina Yasmin",
-    location: "Uttara, Dhaka",
-    image: ASSETS.product2,
+    name: "Tahmina Begum",
+    location: "Sylhet Sadar, Sylhet",
+    image: ASSETS.kotaTealPeacock,
     quote:
-      "আমি নিজে নিকুঞ্জ-২ শোরুমে (House #21/B, Road #01) গিয়ে মিন্ট গ্রিন শাড়িটি দেখে ট্রায়াল দিয়ে কিনেছি। শোরুমের পরিবেশ অত্যন্ত মার্জিত। খাঁটি ঢাকাই মসলিনপ্রেমীদের জন্য দুই কন্যা সেরা নির্ভরযোগ্য প্রতিষ্ঠান।",
-    product: "Mint Green Butterfly Handloom Muslin Saree",
+      "পিকক টিল গ্রিন কোটা ডোরিয়া শাড়িটি উপহার হিসেবে পেয়েছিলাম। কাপড়ের টেক্সচার খুব নরম ও আরামদায়ক। দাম ও মানের তুলনা করলে শাড়িতে TAFA সবসময় সেরা।",
+    product: "Peacock Teal Kota Doria Saree (৳1,950)",
     rating: 5,
   },
 ];
@@ -75,16 +75,16 @@ export function CommunityStories() {
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 md:mb-14">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#D4AF37]/50 mb-3 shadow-xs">
-            <Heart className="h-3 w-3 text-[#8B0000] fill-[#8B0000]" />
-            <span className="text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#8B0000]">
-              ৪৮৪,০০০+ আপুদের ভালোবাসা ও রিভিউ
+            <Heart className="h-3 w-3 text-[#133827] fill-[#133827]" />
+            <span className="text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#133827]">
+              ৪০৪,০০০+ আপুদের ভালোবাসা ও রিভিউ
             </span>
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-[#1A1A1A] font-heading tracking-tight">
-            Loved By 484,000+ Saree &amp; Heritage Lovers
+            Loved By 404,000+ Saree Lovers
           </h2>
           <p className="mt-3 text-sm md:text-base text-neutral-600 font-medium">
-            সারাদেশের আপুদের বাস্তব অভিজ্ঞতা, ওপেন পার্সেল আনবক্সিং সন্তুষ্টি এবং খাঁটি ঢাকাই মসলিনের নির্ভরতায় দুই কন্যা (Dui Konna)।
+            সারাদেশের আপুদের বাস্তব অভিজ্ঞতা, ওপেন পার্সেল আনবক্সিং সন্তুষ্টি এবং রিজনেবল প্রাইসে প্রিমিয়াম শাড়ির নির্ভরযোগ্য ব্র্যান্ড তাফা (TAFA)।
           </p>
 
           {/* Interactive Story Circles */}
@@ -98,7 +98,7 @@ export function CommunityStories() {
                 <div
                   className={`size-16 sm:size-20 rounded-full p-1 transition-all duration-300 ${
                     idx === activeIdx
-                      ? "ring-4 ring-[#D4AF37] scale-110 shadow-lg bg-[#8B0000]"
+                      ? "ring-4 ring-[#D4AF37] scale-110 shadow-lg bg-[#133827]"
                       : "ring-2 ring-[#E8DFD5] opacity-70 group-hover/avatar:opacity-100 group-hover/avatar:scale-105"
                   }`}
                 >
@@ -112,7 +112,7 @@ export function CommunityStories() {
                     />
                   </div>
                 </div>
-                <span className={`text-xs font-bold transition-colors ${idx === activeIdx ? "text-[#8B0000]" : "text-neutral-500"}`}>
+                <span className={`text-xs font-bold transition-colors ${idx === activeIdx ? "text-[#133827]" : "text-neutral-500"}`}>
                   {s.name.split(" ")[0]}
                 </span>
               </button>
@@ -155,7 +155,7 @@ export function CommunityStories() {
                   </p>
                 </div>
 
-                <span className="text-[11px] font-bold text-[#8B0000] bg-[#FAF7F2] px-3 py-1 rounded-full border border-[#D4AF37]/40">
+                <span className="text-[11px] font-bold text-[#133827] bg-[#FAF7F2] px-3 py-1 rounded-full border border-[#D4AF37]/40">
                   {activeStory.product}
                 </span>
               </div>

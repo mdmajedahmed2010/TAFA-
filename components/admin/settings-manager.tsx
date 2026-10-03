@@ -61,7 +61,7 @@ const DEFAULTS: Record<string, { value: unknown; group: string; label: string; t
     type: "textarea",
   },
   store_tagline: {
-    value: "Authentic Dhakai Muslin & Luxury Sarees",
+    value: BUSINESS.TAGLINE,
     group: "general",
     label: "Tagline",
     type: "text",
@@ -75,10 +75,10 @@ const DEFAULTS: Record<string, { value: unknown; group: string; label: string; t
   },
 
   // Branding
-  store_logo: { value: "", group: "branding", label: "Store Logo", type: "image" },
-  store_favicon: { value: "", group: "branding", label: "Favicon", type: "image" },
+  store_logo: { value: "/tafa-assets/logo.png", group: "branding", label: "Store Logo", type: "image" },
+  store_favicon: { value: "/favicon.ico", group: "branding", label: "Favicon", type: "image" },
   primary_color: {
-    value: "#8B0000",
+    value: "#133827",
     group: "branding",
     label: "Primary Brand Color (Hex)",
     type: "text",
@@ -145,19 +145,19 @@ const DEFAULTS: Record<string, { value: unknown; group: string; label: string; t
 
   // SEO
   seo_title: {
-    value: "Dui Konna (দুই কন্যা) — Authentic Dhakai Muslin, Jamdani & Luxury Sarees",
+    value: `${BUSINESS.NAME} (${BUSINESS.NAME_BN}) — Authentic Sarees, Kalamkari & Festive Drape`,
     group: "seo",
     label: "Default SEO Title",
     type: "text",
   },
   seo_description: {
-    value: "Discover 100% authentic Dhakai Muslin, Jamdani, Bridal Crimson Muslin & Karchupi Sarees at Dui Konna (দুই কন্যা), Nikunja-2, Khilkhet, Dhaka. Nationwide Open Parcel delivery & showroom trial.",
+    value: `Discover premium quality sarees at the most reasonable prices at ${BUSINESS.NAME} (${BUSINESS.NAME_BN}), Dhanmondi 5, Dhaka. Nationwide Open Parcel delivery & showroom trial.`,
     group: "seo",
     label: "SEO Description",
     type: "textarea",
   },
   seo_keywords: {
-    value: "dui konna, দুই কন্যা, shamima nasrin, dhakai muslin, muslin saree, dhakai jamdani, bridal red saree, karchupi saree, nikunja 2, dhaka luxury saree",
+    value: "tafa, tafa dhaka, তাফা, tafa tonzehee, kalamkari saree, tissue katan, kota doria, tissue silk, dhanmondi saree shop, dhaka saree boutique",
     group: "seo",
     label: "SEO Keywords (comma separated)",
     type: "text",

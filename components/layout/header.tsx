@@ -1,10 +1,10 @@
 "use client";
 
 /**
- * Dui Konna (দুই কন্যা) — Haute Couture Header
- * Exclusive Muslin Sarees, Authentic Dhakai Jamdani & Luxury Ethnic Couture
- * Showroom: House #21/B, Road #01, Nikunja-2, Khilkhet, Dhaka-1229
- * Facebook: https://www.facebook.com/duikonna01 • 484,000+ Followers
+ * TAFA (তাফা) — Haute Couture Header
+ * Authentic Kalamkari, Kota Doria & Festive Tissue Katan Sarees
+ * Flagship Showroom: House 42/1, Road No 5, Dhanmondi, Dhaka 1209
+ * Facebook: https://www.facebook.com/tafatonzehee • 404,000+ Followers
  * Open Parcel Inspection Nationwide
  */
 
@@ -20,14 +20,14 @@ import { BUSINESS } from "@/lib/constants";
 import { ASSETS } from "@/lib/demo-data";
 
 const navLinks = [
-  { href: "/collections/exclusive-muslin", label: "Exclusive Muslin" },
-  { href: "/collections/dhakai-jamdani", label: "Dhakai Jamdani" },
-  { href: "/collections/bridal-festive", label: "Bridal Red Muslin" },
-  { href: "/collections/luxury-karchupi", label: "Luxury Karchupi" },
-  { href: "/collections/pastel-heritage", label: "Pastel Heritage" },
-  { href: "/collections/muslin-four-piece", label: "4-Piece Sets" },
+  { href: "/collections/kalamkari-sarees", label: "Kalamkari Sarees" },
+  { href: "/collections/kota-doria-linen", label: "Kota Doria & Linen" },
+  { href: "/collections/festive-tissue-katan", label: "Festive Tissue Katan" },
+  { href: "/collections/warli-folk-art", label: "Warli Art Sarees" },
+  { href: "/collections/jamdani-gadwal", label: "Dhakai Jamdani" },
+  { href: "/collections/showroom-specials", label: "Showroom Specials" },
   { href: "/about", label: "About Us" },
-  { href: "/contact", label: "Showroom & Contact" },
+  { href: "/contact", label: "Dhanmondi Showroom" },
   { href: "/faq", label: "FAQ" },
 ];
 
@@ -39,62 +39,61 @@ const megaMenuData: Record<
     featured: { title: string; subtitle: string; image: string; href: string };
   }
 > = {
-  "Exclusive Muslin": {
+  "Kalamkari Sarees": {
     categories: [
-      { label: "Shop All Exclusive Muslin Sarees", href: "/collections/exclusive-muslin" },
-      { label: "Royal Mustard Gold Dhakai Muslin Saree (৳২৯,০০০)", href: "/products/dui-konna-royal-mustard-gold-handwoven-dhakai-muslin-saree" },
-      { label: "Terracotta Rust Orange Butterfly Zari Muslin", href: "/products/dui-konna-terracotta-rust-orange-butterfly-zari-muslin-saree" },
-      { label: "Mauve Plum Chevron Zigzag Zari Muslin", href: "/products/dui-konna-mauve-plum-chevron-zigzag-zari-muslin-saree" },
-      { label: "Dual-Tone Sage Green & Magenta Contrast Muslin", href: "/products/dui-konna-dual-tone-sage-green-magenta-contrast-muslin-saree" },
+      { label: "Shop All Kalamkari Boutique Sarees", href: "/collections/kalamkari-sarees" },
+      { label: "Midnight Black & Mustard Peacock Motif Saree (৳১,৯৯০)", href: "/products/tafa-midnight-black-mustard-kalamkari-peacock-motif-boutique-saree" },
+      { label: "Sage Green & Royal Purple Kalamkari Saree (৳১,৯৯০)", href: "/products/tafa-sage-green-royal-purple-kalamkari-saree-with-zari-border" },
+      { label: "Traditional Peacock & Elephant Zari Weaves", href: "/collections/kalamkari-sarees" },
     ],
     styles: [
-      { label: "১০০% হাতে বোনা খাঁটি ঢাকাই মসলিন জমিন", href: "/collections/exclusive-muslin" },
-      { label: "সিগনেচার বাটারফ্লাই বুটি ও জিগজ্যাগ শেভরন পাড়", href: "/collections/exclusive-muslin" },
-      { label: "ম্যাচিং রানিং ব্লাউজ পিস ও ট্যাসেলযুক্ত আঁচল", href: "/collections/exclusive-muslin" },
+      { label: "ঐতিহ্যবাহী ময়ূর মোটিফ ও রূপালী জরির গর্জিয়াস হাতি পাড়", href: "/collections/kalamkari-sarees" },
+      { label: "ম্যাচিং রানিং ব্লাউজ পিস ও স্ট্রাইপড আঁচল", href: "/collections/kalamkari-sarees" },
+      { label: "উৎসব, বৈকালিক দাওয়াত ও পারিবারিক অনুষ্ঠানের আভিজাত্য", href: "/collections/kalamkari-sarees" },
     ],
     featured: {
-      title: "Royal Mustard Gold Dhakai Muslin Saree",
-      subtitle: "খাঁটি গোল্ডেন জরি বুটি ও রাজকীয় আঁচল — ৳২৯,০০০",
-      image: ASSETS.product3,
-      href: "/collections/exclusive-muslin",
+      title: "Midnight Black & Mustard Kalamkari Saree",
+      subtitle: "ময়ূর মোটিফ ও রূপালী জরির হাতি পাড় — ৳১,৯৯০",
+      image: ASSETS.kalamkariBlack,
+      href: "/collections/kalamkari-sarees",
     },
   },
-  "Dhakai Jamdani": {
+  "Kota Doria & Linen": {
     categories: [
-      { label: "Shop All Dhakai Jamdani Sarees", href: "/collections/dhakai-jamdani" },
-      { label: "Pearl White Multicolor Geometric Jamdani Saree", href: "/products/dui-konna-pearl-white-multicolor-geometric-dhakai-jamdani-muslin-saree" },
-      { label: "Traditional Handloom Heritage Weaves", href: "/collections/dhakai-jamdani" },
-      { label: "Festive Dhakai Jamdani Specials", href: "/collections/dhakai-jamdani" },
+      { label: "Shop All Kota Doria & Linen Silk", href: "/collections/kota-doria-linen" },
+      { label: "Crimson Red Festive Kota Doria Saree (৳১,৬৫০)", href: "/products/tafa-crimson-red-festive-kota-doria-linen-silk-designer-saree" },
+      { label: "Peacock Teal Green Kota Doria Saree (৳১,৬৫০)", href: "/products/tafa-peacock-teal-green-kota-doria-linen-silk-designer-saree" },
+      { label: "Midnight Navy Blue Kota Doria Saree (৳১,৬৫০)", href: "/products/tafa-midnight-navy-blue-kota-doria-linen-silk-designer-saree" },
     ],
     styles: [
-      { label: "বহু রঙের জ্যামিতিক নকশা ও ঐতিহ্যবাহী পাড়", href: "/collections/dhakai-jamdani" },
-      { label: "মসলিন বেসে সূক্ষ্ম সুতার রাজকীয় কারুকাজ", href: "/collections/dhakai-jamdani" },
-      { label: "বিয়ে, উৎসব ও পারিবারিক সংবর্ধনার অনন্য পোশাক", href: "/collections/dhakai-jamdani" },
+      { label: "হ্যান্ড ব্লক ফ্লোরাল কলকা বুটি ও শেভরন জিগজ্যাগ আঁচল", href: "/collections/kota-doria-linen" },
+      { label: "লাইটওয়েট আরামদায়ক ফেব্রিক ও চকচকে জরি পাড়", href: "/collections/kota-doria-linen" },
+      { label: "সারা দিনের পরিধানে পরম প্রশান্তি ও মার্জিত লুক", href: "/collections/kota-doria-linen" },
     ],
     featured: {
-      title: "Pearl White Multicolor Dhakai Jamdani",
-      subtitle: "পার্ল হোয়াইট বেসে রঙিন জ্যামিতিক নকশা — ৳২৭,৫০০",
-      image: ASSETS.product5,
-      href: "/collections/dhakai-jamdani",
+      title: "Crimson Red Festive Kota Doria Saree",
+      subtitle: "সোনালী কলকা বুটি ও শেভরন জিগজ্যাগ আঁচল — ৳১,৬৫০",
+      image: ASSETS.kotaCrimson,
+      href: "/collections/kota-doria-linen",
     },
   },
-  "Luxury Karchupi": {
+  "Festive Tissue Katan": {
     categories: [
-      { label: "Shop All Luxury Karchupi Sarees", href: "/collections/luxury-karchupi" },
-      { label: "Dusty Lilac Lavender Luxury Karchupi Saree", href: "/products/dui-konna-dusty-lilac-lavender-luxury-karchupi-organza-saree" },
-      { label: "Dusty Mauve Full Drape Floral Karchupi Saree", href: "/products/dui-konna-dusty-mauve-full-drape-floral-karchupi-heritage-saree" },
-      { label: "Handcrafted Zardozi & Sequin Bridal Couture", href: "/collections/luxury-karchupi" },
+      { label: "Shop All Festive Tissue Katan & Silk", href: "/collections/festive-tissue-katan" },
+      { label: "Pure Gold Festive Tissue Katan Bridal Saree (৳৩,২৫০)", href: "/products/tafa-pure-gold-festive-tissue-katan-bridal-saree-special" },
+      { label: "Royal Champagne Gold Tissue Silk Saree (৳৩,৪৫০)", href: "/products/tafa-royal-champagne-gold-tissue-silk-saree-model-draped-edition" },
+      { label: "Peach Rose Shimmer Tissue Kota Silk (৳২,১৮০)", href: "/products/tafa-peach-rose-shimmer-tissue-kota-silk-floral-embroidered-saree" },
     ],
     styles: [
-      { label: "হাতে খোদাইকৃত মুক্তা, সিকোয়েন্স ও জারদৌসি কাজ", href: "/collections/luxury-karchupi" },
-      { label: "লাইটওয়েট প্রিমিয়াম অর্গাঞ্জা ও সফট মসলিন ড্র্যাপ", href: "/collections/luxury-karchupi" },
-      { label: "শামীমা নাসরিন সিগনেচার ডিজাইনার আর্ট", href: "/collections/luxury-karchupi" },
+      { label: "আলো ঝলমলে সোনালী টিস্যু টেক্সচার ও ব্রাইডাল কারুকাজ", href: "/collections/festive-tissue-katan" },
+      { label: "বিয়ে, রিসেপশন ও ঈদ উৎসবের পরম আকর্ষণ", href: "/collections/festive-tissue-katan" },
+      { label: "অল-ওভার কাশ্মীরি ফ্লোরাল জাল ও সূক্ষ্ম এমব্রয়ডারি", href: "/collections/festive-tissue-katan" },
     ],
     featured: {
-      title: "Dusty Lilac Lavender Luxury Karchupi",
-      subtitle: "জরি, জারদৌসি ও মুক্তার সূক্ষ্ম কারুকাজ — ৳২৮,০০০",
-      image: ASSETS.product8,
-      href: "/collections/luxury-karchupi",
+      title: "Pure Gold Festive Tissue Katan Saree",
+      subtitle: "রাজকীয় স্বর্ণালী আভা ও ঐতিহ্যবাহী চওড়া পাড় — ৳৩,২৫০",
+      image: ASSETS.tissueKatanGold,
+      href: "/collections/festive-tissue-katan",
     },
   },
 };
@@ -111,19 +110,19 @@ export function Header({ settings = {} }: { settings?: Record<string, unknown> }
   }, []);
 
   const marqueeItems = [
-    "🦋 DUI KONNA (দুই কন্যা) • এক্সক্লুসিভ ঢাকাই মসলিন শাড়ি ও এথনিক লাক্সারি ওয়্যার",
-    "✦ ৪৮৪,০০০+ আপুদের ভালোবাসায় নিকুঞ্জ-২ এর বিশ্বস্ত ব্র্যান্ড",
-    "🦋 ওপেন পার্সেল গ্যারান্টি — পার্সেল খুলে শাড়ি দেখে চেক করে পেমেন্ট করার নিশ্চিন্ত সুবিধা",
+    "🌸 উৎসবকে সাজাই TAFA’র শাড়িতে • সবচেয়ে রিজনেবল প্রাইসে প্রিমিয়াম শাড়ির সমাহার",
+    "✦ ৪০৪,০০০+ আপুদের ভালোবাসায় ধানমন্ডি শোরুম ও বিশ্বস্ত অনলাইন বুটিক",
+    "🌸 ওপেন পার্সেল গ্যারান্টি — পার্সেল খুলে শাড়ি দেখে চেক করে পেমেন্ট করার শতভাগ নিশ্চিন্ত সুবিধা",
     "✦ ঢাকা ডেলিভারি চার্জ ৮০ টাকা • ঢাকার বাইরে ১৫০ টাকা • ২ বা ততোধিক শাড়িতে সারাদেশে ফ্রি ডেলিভারি",
-    "🦋 সরাসরি শোরুম ভিজিট করুন: হাউস #২১/বি, রোড #০১, নিকুঞ্জ-২, খিলক্ষেত, ঢাকা (প্রতিদিন ১১টা - ৯টা)",
-    "✦ হটলাইন ও হোয়াটসঅ্যাপ: 01339-364462 / 01741-954490",
-    "🦋 খাঁটি ঢাকাই মসলিন ও ঐতিহ্যবাহী জামদানির সবচেয়ে অনন্য কালেকশন",
+    "🌸 সরাসরি শোরুম ভিজিট করুন: হাউস ৪২/১, রোড নং ৫, ধানমন্ডি, ঢাকা ১২০৯ (প্রতিদিন সকাল ১০:৩০ - রাত ৯:০০)",
+    "✦ হটলাইন ও হোয়াটসঅ্যাপ: 01885-507455 / 01688-231132",
+    "🌸 ঐতিহ্যবাহী কালামকারি, কোটা ডোরিয়া ও টিস্যু কাতান শাড়ির এক্সক্লুসিভ সমাহার",
   ];
 
   return (
     <header className="sticky top-0 z-50 w-full transition-all duration-300">
       {/* 1. Endless Haute Marquee Ticker */}
-      <div className="bg-[#8B0000] text-[#D4AF37] overflow-hidden py-2 border-b border-[#D4AF37]/30 select-none">
+      <div className="bg-[#133827] text-[#D4AF37] overflow-hidden py-2 border-b border-[#D4AF37]/30 select-none">
         <div className="animate-marquee flex items-center gap-10 whitespace-nowrap text-[10px] md:text-[11px] font-semibold tracking-[0.2em] uppercase">
           {marqueeItems.concat(marqueeItems).map((item, idx) => (
             <span key={idx} className="flex items-center gap-3">
@@ -137,8 +136,8 @@ export function Header({ settings = {} }: { settings?: Record<string, unknown> }
       <div
         className={`w-full transition-all duration-500 ${
           isScrolled
-            ? "bg-white/95 backdrop-blur-2xl shadow-[0_10px_30px_-10px_rgba(139,0,0,0.18)] border-b border-[#D4AF37]/30 py-1.5"
-            : "bg-[#FAF7F2]/95 backdrop-blur-xl border-b border-[#E8DFD3] py-2.5"
+            ? "bg-white/95 backdrop-blur-2xl shadow-[0_10px_30px_-10px_rgba(19,56,39,0.18)] border-b border-[#D4AF37]/30 py-1.5"
+            : "bg-[#FAF7F2]/95 backdrop-blur-xl border-b border-[#E5DAC6] py-2.5"
         }`}
       >
         <div className="container mx-auto px-4 md:px-8 lg:px-12">
@@ -148,14 +147,14 @@ export function Header({ settings = {} }: { settings?: Record<string, unknown> }
               <MobileNav links={navLinks} />
               <Link href="/" className="flex items-center gap-3 group/brand">
                 <div className="relative">
-                  <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-[#8B0000] via-[#D4AF37] to-[#C8A2C8] opacity-75 blur-[2px] group-hover/brand:opacity-100 transition-opacity" />
+                  <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-[#133827] via-[#D4AF37] to-[#1E5038] opacity-75 blur-[2px] group-hover/brand:opacity-100 transition-opacity" />
                   <Image
                     src={
                       typeof settings?.store_logo === "string" && settings.store_logo
                         ? settings.store_logo
-                        : "/duikonna-assets/logo.png"
+                        : ASSETS.logo
                     }
-                    alt="Dui Konna (দুই কন্যা)"
+                    alt="TAFA (তাফা)"
                     width={52}
                     height={52}
                     className="relative h-11 w-11 md:h-13 md:w-13 object-cover bg-black rounded-full ring-2 ring-[#D4AF37] shadow-sm transition-transform duration-500 group-hover/brand:scale-105"
@@ -163,13 +162,13 @@ export function Header({ settings = {} }: { settings?: Record<string, unknown> }
                 </div>
                 <div>
                   <div className="flex items-center gap-1.5">
-                    <span className="text-[#D4AF37] text-base">🦋</span>
-                    <p className="text-[19px] md:text-[22px] font-bold tracking-[0.02em] text-[#8B0000] font-heading leading-none">
-                      Dui Konna
+                    <span className="text-[#D4AF37] text-base">🌸</span>
+                    <p className="text-[19px] md:text-[23px] font-bold tracking-[0.02em] text-[#133827] font-heading leading-none">
+                      TAFA
                     </p>
                   </div>
                   <p className="text-[9.5px] font-semibold tracking-[0.2em] text-[#D4AF37] uppercase mt-0.5">
-                    দুই কন্যা • MUSLIN HERITAGE
+                    তাফা • DHANMONDI BOUTIQUE
                   </p>
                 </div>
               </Link>
@@ -192,10 +191,10 @@ export function Header({ settings = {} }: { settings?: Record<string, unknown> }
                     key={link.href}
                     href={link.href}
                     prefetch={true}
-                    className="text-[11.5px] font-bold uppercase tracking-[0.14em] text-[#181513]/85 hover:text-[#8B0000] py-4 block transition-all relative group/nav"
+                    className="text-[11.5px] font-bold uppercase tracking-[0.14em] text-[#121815]/85 hover:text-[#133827] py-4 block transition-all relative group/nav"
                   >
                     {link.label}
-                    <span className="absolute bottom-2 left-0 w-0 h-0.5 bg-[#8B0000] transition-all duration-300 group-hover/nav:w-full" />
+                    <span className="absolute bottom-2 left-0 w-0 h-0.5 bg-[#133827] transition-all duration-300 group-hover/nav:w-full" />
                   </Link>
                 );
               })}
@@ -210,17 +209,17 @@ export function Header({ settings = {} }: { settings?: Record<string, unknown> }
                 href={BUSINESS.FACEBOOK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#8B0000]/10 hover:bg-[#8B0000] text-[#8B0000] hover:text-[#D4AF37] border border-[#8B0000]/30 transition-all text-[11px] font-bold tracking-wider"
-                title="Dui Konna Facebook Page (484K+ Followers)"
+                className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#133827]/10 hover:bg-[#133827] text-[#133827] hover:text-[#D4AF37] border border-[#133827]/30 transition-all text-[11px] font-bold tracking-wider"
+                title="TAFA Facebook Page (404K+ Followers)"
               >
-                <span>FB: 484K+</span>
+                <span>FB: 404K+</span>
               </a>
 
               {/* User Account / Login */}
               <Link
                 href="/account"
                 aria-label="User Account"
-                className="flex items-center justify-center size-10 rounded-full text-foreground/80 hover:text-[#8B0000] hover:bg-[#FAF7F2] transition-colors"
+                className="flex items-center justify-center size-10 rounded-full text-foreground/80 hover:text-[#133827] hover:bg-[#FAF7F2] transition-colors"
               >
                 <User className="h-5 w-5" strokeWidth={1.75} />
               </Link>

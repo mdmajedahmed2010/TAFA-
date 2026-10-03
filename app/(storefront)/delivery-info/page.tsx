@@ -19,14 +19,14 @@ import { BUSINESS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Delivery & Open Parcel Policy | ${BUSINESS.NAME} (${BUSINESS.NAME_BN})`,
   description:
-    "Dui Konna delivery charges (Inside Dhaka ৳80, Outside Dhaka ৳150, Free Delivery on 2+ sarees), shipping timelines, and our signature Open Parcel inspection guarantee across Bangladesh.",
+    "TAFA delivery charges (Inside Dhaka ৳80, Outside Dhaka ৳150, Free Delivery on 2+ sarees), shipping timelines, and our signature Open Parcel inspection guarantee across Bangladesh.",
 };
 
 export default function DeliveryInfoPage() {
   return (
     <main className="min-h-screen bg-[#FAF7F2]">
       {/* Hero Section */}
-      <section className="relative py-16 md:py-24 bg-[#8B0000] text-white text-center px-6 overflow-hidden">
+      <section className="relative py-16 md:py-24 bg-[#133827] text-white text-center px-6 overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(212,175,55,0.25),transparent_70%)] pointer-events-none" />
         <div className="relative z-10 max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/40 text-[#D4AF37] text-[10px] uppercase tracking-[0.28em] font-bold">
@@ -37,7 +37,7 @@ export default function DeliveryInfoPage() {
             Delivery &amp; Open Parcel Guide
           </h1>
           <p className="text-[#FAF7F2] text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
-            সারা বাংলাদেশে দ্রুততম হোম ডেলিভারি এবং পার্সেল খুলে ঢাকাই মসলিন শাড়ির বুনন ও জরি দেখে নেওয়ার শতভাগ নিশ্চিন্ত সুবিধা।
+            সারা বাংলাদেশে দ্রুততম হোম ডেলিভারি এবং পার্সেল খুলে শাড়ির কাপড় ও নিখুঁত ফিনিশিং দেখে নেওয়ার শতভাগ নিশ্চিন্ত সুবিধা।
           </p>
         </div>
       </section>
@@ -45,20 +45,20 @@ export default function DeliveryInfoPage() {
       {/* Main Container */}
       <div className="max-w-5xl mx-auto px-6 py-14 space-y-12">
         {/* Free Shipping Banner */}
-        <div className="bg-gradient-to-r from-[#D4AF37]/20 via-[#8B0000]/10 to-[#D4AF37]/20 border border-[#D4AF37] rounded-2xl p-4 md:p-6 text-center space-y-1">
-          <div className="inline-flex items-center gap-2 text-[#8B0000] font-bold text-sm md:text-base">
+        <div className="bg-gradient-to-r from-[#D4AF37]/20 via-[#133827]/10 to-[#D4AF37]/20 border border-[#D4AF37] rounded-2xl p-4 md:p-6 text-center space-y-1">
+          <div className="inline-flex items-center gap-2 text-[#133827] font-bold text-sm md:text-base">
             <Gift className="h-5 w-5 text-[#D4AF37]" />
             <span>স্পেশাল অফার: যেকোনো ২ বা ততোধিক শাড়ি অর্ডারে সারা দেশে ডেলিভারি সম্পূর্ণ ফ্রি!</span>
           </div>
           <p className="text-xs text-neutral-600">
-            অটোমেটিক চেকআউটে ফ্রি ডেলিভারি ডিসকাউন্ট কার্যকর হবে অথবা কুপন DUIKONNA10 ব্যবহার করুন।
+            অটোমেটিক চেকআউটে ফ্রি ডেলিভারি ডিসকাউন্ট কার্যকর হবে অথবা কুপন TAFA10 ব্যবহার করুন।
           </p>
         </div>
 
         {/* Delivery Rates Grid */}
         <section className="space-y-6">
           <div className="text-center space-y-2">
-            <p className="text-[10px] uppercase tracking-[0.25em] text-[#8B0000] font-bold">
+            <p className="text-[10px] uppercase tracking-[0.25em] text-[#133827] font-bold">
               চার্জ ও সময়সূচী
             </p>
             <h2 className="text-2xl md:text-3xl font-bold text-[#1A1A1A] font-serif">
@@ -68,12 +68,12 @@ export default function DeliveryInfoPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-2xl p-6 border border-[#E8DFD5] shadow-xs relative overflow-hidden">
-              <div className="w-2 h-full bg-[#8B0000] absolute left-0 top-0" />
-              <div className="size-11 rounded-full bg-rose-50 text-[#8B0000] flex items-center justify-center mb-4 border border-[#8B0000]/20">
+              <div className="w-2 h-full bg-[#133827] absolute left-0 top-0" />
+              <div className="size-11 rounded-full bg-emerald-50 text-[#133827] flex items-center justify-center mb-4 border border-[#133827]/20">
                 <MapPin className="h-5 w-5" />
               </div>
               <h3 className="font-bold text-lg text-[#1A1A1A] mb-1 font-serif">ঢাকা সিটির ভিতরে</h3>
-              <p className="text-3xl font-bold text-[#8B0000] mb-2">৳{BUSINESS.DELIVERY_CHARGE_INSIDE}</p>
+              <p className="text-3xl font-bold text-[#133827] mb-2">৳{BUSINESS.DELIVERY_CHARGE_INSIDE}</p>
               <div className="space-y-2 text-xs text-neutral-600">
                 <div className="flex items-center gap-2">
                   <Clock className="h-4 w-4 text-[#D4AF37]" />
@@ -84,7 +84,7 @@ export default function DeliveryInfoPage() {
                   <span>ক্যাশ অন ডেলিভারি (COD) প্রযোজ্য</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Eye className="h-4 w-4 text-[#8B0000]" />
+                  <Eye className="h-4 w-4 text-[#133827]" />
                   <span>ওপেন পার্সেল চেকিং শতভাগ উন্মুক্ত</span>
                 </div>
               </div>
@@ -102,26 +102,26 @@ export default function DeliveryInfoPage() {
               <div className="space-y-2 text-xs text-neutral-600">
                 <div className="flex items-center gap-2">
                   <Clock className="h-4 w-4 text-[#D4AF37]" />
-                  <span>২ – ৩ কার্যদিবসের মধ্যে হোম ডেলিভারি</span>
+                  <span>২ – ৪ কার্যদিবসের মধ্যে হোম ডেলিভারি</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 text-emerald-600" />
-                  <span>৬৪ জেলা ও উপজেলা পর্যায়ে সরাসরি ডেলিভারি</span>
+                  <span>৬৪ জেলা ও উপজেলা পর্যায়ে সরাসরি হোম ডেলিভারি</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Eye className="h-4 w-4 text-[#8B0000]" />
+                  <Eye className="h-4 w-4 text-[#133827]" />
                   <span>ডেলিভারিম্যানের সামনে ওপেন পার্সেল চেক</span>
                 </div>
               </div>
             </div>
 
             <div className="bg-white rounded-2xl p-6 border border-[#E8DFD5] shadow-xs relative overflow-hidden">
-              <div className="w-2 h-full bg-[#5A0000] absolute left-0 top-0" />
+              <div className="w-2 h-full bg-[#0E291C] absolute left-0 top-0" />
               <div className="size-11 rounded-full bg-neutral-100 text-[#1A1A1A] flex items-center justify-center mb-4 border border-neutral-200">
-                <Store className="h-5 w-5 text-[#8B0000]" />
+                <Store className="h-5 w-5 text-[#133827]" />
               </div>
               <h3 className="font-bold text-lg text-[#1A1A1A] mb-1 font-serif">শোরুম পিকআপ ও ট্রায়াল</h3>
-              <p className="text-sm font-bold text-[#8B0000] mb-2">নিকুঞ্জ-২, খিলক্ষেত, ঢাকা</p>
+              <p className="text-sm font-bold text-[#133827] mb-2">ধানমন্ডি ৫, ঢাকা ১২০৯</p>
               <div className="space-y-2 text-xs text-neutral-600">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 text-emerald-600" />
@@ -129,7 +129,7 @@ export default function DeliveryInfoPage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 text-emerald-600" />
-                  <span>প্রতিদিন সকাল ১১:০০ থেকে রাত ৯:০০</span>
+                  <span>প্রতিদিন সকাল ১০:৩০ থেকে রাত ৯:০০</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 text-emerald-600" />
@@ -143,7 +143,7 @@ export default function DeliveryInfoPage() {
         {/* Step by Step Open Parcel Inspection */}
         <section className="bg-white rounded-3xl p-8 md:p-10 border border-[#E8DFD5] shadow-sm space-y-8">
           <div className="text-center max-w-2xl mx-auto space-y-2">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-50 border border-rose-200 text-[#8B0000] text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-[#133827] text-xs font-bold uppercase tracking-wider">
               <Eye className="h-4 w-4" />
               <span>How Open Parcel Works</span>
             </div>
@@ -151,7 +151,7 @@ export default function DeliveryInfoPage() {
               ওপেন পার্সেল চেক করার ৪টি সহজ ধাপ
             </h2>
             <p className="text-neutral-600 text-xs md:text-sm">
-              {BUSINESS.NAME}-এ দামি ঢাকাই মসলিন শাড়ি কেনাকাটায় নেই কোনো সংশয়! পার্সেল নেওয়ার সময় ধাপগুলো অনুসরণ করুন:
+              {BUSINESS.NAME}-এ শাড়ি কেনাকাটায় নেই কোনো সংশয়! পার্সেল নেওয়ার সময় ধাপগুলো অনুসরণ করুন:
             </p>
           </div>
 
@@ -170,7 +170,7 @@ export default function DeliveryInfoPage() {
               {
                 step: "০৩",
                 title: "শাড়ি পরখ করা",
-                desc: "মসলিনের কোমল ফেব্রিক, আঁচলের জরির কাজ, পাড় ও ব্লাউজ পিস ভালো করে মিলিয়ে নিন।",
+                desc: "শাড়ির রঙ, ফেব্রিক, আঁচলের কাজ, পাড় ও ব্লাউজ পিস ভালো করে মিলিয়ে নিন।",
               },
               {
                 step: "০৪",
@@ -179,7 +179,7 @@ export default function DeliveryInfoPage() {
               },
             ].map((s) => (
               <div key={s.step} className="bg-[#FAF7F2] rounded-2xl p-5 border border-[#E8DFD5] space-y-2">
-                <span className="text-2xl font-bold text-[#8B0000] font-mono block">
+                <span className="text-2xl font-bold text-[#133827] font-mono block">
                   {s.step}
                 </span>
                 <h3 className="font-bold text-sm text-[#1A1A1A] font-serif">{s.title}</h3>
@@ -198,7 +198,7 @@ export default function DeliveryInfoPage() {
         </section>
 
         {/* Payment Methods */}
-        <section className="bg-[#8B0000] text-white rounded-3xl p-8 md:p-10 border border-[#D4AF37]/30 space-y-6">
+        <section className="bg-[#133827] text-white rounded-3xl p-8 md:p-10 border border-[#D4AF37]/30 space-y-6">
           <div className="text-center space-y-2">
             <p className="text-[10px] uppercase tracking-[0.25em] text-[#D4AF37] font-bold">
               পেমেন্ট মাধ্যমসমূহ
@@ -243,7 +243,7 @@ export default function DeliveryInfoPage() {
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
               href={`tel:${BUSINESS.PHONE}`}
-              className="inline-flex items-center gap-2 h-12 px-7 bg-[#8B0000] hover:bg-[#6B0000] text-[#D4AF37] hover:text-white text-xs font-bold uppercase tracking-[0.14em] rounded-full transition-all shadow-md"
+              className="inline-flex items-center gap-2 h-12 px-7 bg-[#133827] hover:bg-[#0E291C] text-[#D4AF37] hover:text-white text-xs font-bold uppercase tracking-[0.14em] rounded-full transition-all shadow-md"
             >
               <Phone className="h-4 w-4" />
               <span>হটলাইন: {BUSINESS.PHONE}</span>

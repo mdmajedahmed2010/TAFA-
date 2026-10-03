@@ -5,89 +5,51 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Dui Konna (দুই কন্যা) — Brand Color System & Styles
- * Showroom: House #21/B, Road #01, Nikunja-2, Khilkhet, Dhaka-1229
- * Facebook: https://www.facebook.com/duikonna01 • 484,000+ Followers
- * Open Parcel Inspection Nationwide • Luxury Muslin & Jamdani
+ * TAFA (তাফা) — Brand Color System & Styles
+ * Flagship Showroom: House 42/1, Road No 5, Dhanmondi, Dhaka 1209
+ * Facebook: https://www.facebook.com/tafatonzehee • 404,000+ Followers
+ * Open Parcel Inspection Nationwide • Premium Ethnic Sarees
  */
 
 /* ═══════════════════════════════════════════
-   THEME — Dui Konna (দুই কন্যা) Color System
+   THEME — TAFA (তাফা) Royal Emerald & Gold Color System
    ═══════════════════════════════════════════ */
 @theme inline {
-  --color-primary: #8B0000;
+  --color-primary: #133827;
   --color-primary-foreground: #ffffff;
   --color-secondary: #FAF7F2;
-  --color-secondary-foreground: #181513;
+  --color-secondary-foreground: #121815;
   --color-accent: #D4AF37;
-  --color-accent-foreground: #121214;
+  --color-accent-foreground: #133827;
   --color-accent-hover: #C5A059;
-  --color-accent-slate: #3B3C4A;
-  --color-accent-navy: #1A365D;
+  --color-accent-slate: #2A3B32;
+  --color-accent-navy: #152B3C;
   --color-accent-gold: #D4AF37;
   --color-accent-amber: #C59B27;
   --color-accent-light: #FDF9F0;
-  --color-duikonna-crimson: #8B0000;
-  --color-duikonna-crimson-dark: #660000;
+  --color-tafa-emerald: #133827;
+  --color-tafa-emerald-dark: #0B2217;
+  --color-tafa-emerald-light: #1E5038;
+  --color-tafa-gold: #D4AF37;
+  --color-tafa-gold-light: #F3E5AB;
+  --color-tafa-gold-dark: #B8972E;
+  --color-tafa-cream: #FAF7F2;
+  --color-tafa-dark: #121815;
+  --color-tafa-ruby: #8B1E3F;
+  --color-duikonna-crimson: #133827;
+  --color-duikonna-crimson-dark: #0B2217;
   --color-duikonna-gold: #D4AF37;
   --color-duikonna-gold-light: #F3E5AB;
   --color-duikonna-cream: #FAF7F2;
-  --color-duikonna-dark: #181513;
+  --color-duikonna-dark: #121815;
   --color-duikonna-rose: #C8A2C8;
-  --color-shoppingqueen-maroon: #8B0000;
-  --color-shoppingqueen-maroon-dark: #660000;
-  --color-shoppingqueen-gold: #D4AF37;
-  --color-shoppingqueen-gold-light: #F3E5AB;
-  --color-shoppingqueen-rose: #C8A2C8;
-  --color-shoppingqueen-cream: #FAF7F2;
-  --color-shoppingqueen-dark: #181513;
-  --color-orni-maroon: #8B0000;
-  --color-orni-gold: #D4AF37;
-  --color-orni-rose: #C8A2C8;
-  --color-orni-cream: #FAF7F2;
-  --color-tazeen-crimson: #8B0000;
-  --color-tazeen-crimson-dark: #660000;
-  --color-tazeen-gold: #D4AF37;
-  --color-tazeen-gold-light: #F3E5AB;
-  --color-tazeen-purple: #8B0000;
-  --color-tazeen-fuchsia: #C8A2C8;
-  --color-tazeen-lavender: #FAF7F2;
-  --color-tazeen-emerald: #1B4D3E;
-  --color-tazeen-cream: #FAF7F2;
-  --color-fashion-terracotta: #8B0000;
-  --color-fashion-slate: #3B3C4A;
-  --color-fashion-navy: #1A365D;
-  --color-fashion-gold: #D4AF37;
-  --color-fashion-amber: #C59B27;
-  --color-fashion-cream: #FAF7F2;
-  --color-fashion-dark: #181513;
-  --color-fashion-purple: #8B0000;
-  --color-fashion-violet: #C8A2C8;
-  --color-tanzz-onyx: #181513;
-  --color-tanzz-gold: #D4AF37;
-  --color-tanzz-gold-bright: #E5A84B;
-  --color-tanzz-cream: #FAF7F2;
-  --color-tanzz-dark: #181513;
-  --color-threesis-plum: #660000;
-  --color-threesis-rose: #C8A2C8;
-  --color-threesis-dark: #181513;
-  --color-threesis-gold: #D4AF37;
-  --color-threesis-cream: #FAF7F2;
-  --color-enayas-purple: #8B0000;
-  --color-enayas-dark: #181513;
-  --color-enayas-gold: #D4AF37;
-  --color-enayas-rose: #C8A2C8;
-  --color-enayas-wine: #8B0000;
-  --color-blossom-pink: #C8A2C8;
-  --color-blossom-rose: #FDF9F0;
-  --color-blossom-wine: #8B0000;
   --color-background: #FAF7F2;
-  --color-foreground: #1A1A1A;
+  --color-foreground: #121815;
   --color-surface: #ffffff;
-  --color-surface-warm: #F7F2ED;
-  --color-muted: #F3ECE4;
-  --color-muted-foreground: #6B6560;
-  --color-border: #E8DFD3;
+  --color-surface-warm: #F7F3EC;
+  --color-muted: #F2ECE2;
+  --color-muted-foreground: #5C554E;
+  --color-border: #E5DAC6;
   --color-destructive: #DC2626;
   --color-success: #16A34A;
   --color-warning: #F59E0B;

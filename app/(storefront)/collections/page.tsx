@@ -1,5 +1,5 @@
 /**
- * Dui Konna (দুই কন্যা) — All Collections Page
+ * TAFA | Dhaka (তাফা) — All Collections Page
  * Route: /collections
  */
 
@@ -16,52 +16,52 @@ export const revalidate = 60;
 export const metadata: Metadata = {
   title: `All Collections — ${BUSINESS.NAME}`,
   description:
-    `Explore exclusive ${BUSINESS.NAME} collections — Authentic Dhakai Muslin Sarees, Dhakai Jamdani, Bridal Crimson Muslin, Luxury Karchupi & Pastel Heritage.`,
+    `Explore exclusive ${BUSINESS.NAME} collections — Kalamkari Cotton, Tissue Katan, Kota Doria, Tissue Silk, Semi-Silk & Exclusive Organza Sarees at the most reasonable prices.`,
 };
 
 export default async function CollectionsPage() {
   const curatedCollections = [
     {
-      title: "Authentic Dhakai Muslin",
-      image: "/duikonna-assets/fb_cover_landscape.jpg",
-      href: "/collections/dhakai-muslin-saree",
-      tag: "100% PURE MUSLIN",
-      desc: "প্রাচীন ঐতিহ্যবাহী খাঁটি ঢাকাই মসলিন শাড়ি — অসাধারণ কোমলতা, আভিজাত্য ও ১২ হাত স্ট্যান্ডার্ড ড্র্যাপ।",
+      title: "Kalamkari Cotton Sarees",
+      image: "/tafa-assets/473729906_122137976936551800_4469796677943567704_n.jpg",
+      href: "/collections/kalamkari-cotton",
+      tag: "100% PURE COTTON",
+      desc: "ঐতিহ্যবাহী প্রাকৃতিক প্রিন্ট ও ১০০% খাঁটি আরামদায়ক সুতি কালামকারী শাড়ির মার্জিত কালেকশন।",
     },
     {
-      title: "Dhakai Jamdani Heritage",
-      image: "/duikonna-assets/fb_photo_2.jpg",
-      href: "/collections/dhakai-jamdani",
-      tag: "HANDWOVEN CRAFT",
-      desc: "নিখুঁত সুতোয় হাতে বোনা ঢাকাই জামদানি — উৎসব ও ঐতিহ্যের অপরূপ মিলন।",
+      title: "Tissue Katan Royal Silk",
+      image: "/tafa-assets/473347514_122137977476551800_1876527014660724835_n.jpg",
+      href: "/collections/tissue-katan-silk",
+      tag: "ROYAL PARTY WEAR",
+      desc: "জমকালো স্বর্ণালি জরির আঁচল ও লাক্সারি টিস্যু কাতান শাড়ি উৎসব ও বিয়ের রাজকীয় সাজের জন্য।",
     },
     {
-      title: "Bridal Crimson Muslin",
-      image: "/duikonna-assets/fb_photo_4.jpg",
-      href: "/collections/bridal-red-muslin",
-      tag: "ROYAL BRIDAL",
-      desc: "বিয়ে, বউভাত ও রাজকীয় সন্ধ্যার জন্য খাঁটি লাল মসলিন শাড়ি স্বর্ণালি জরির কারুকাজে।",
+      title: "Kota Doria Handloom",
+      image: "/tafa-assets/473775191_122137976510551800_3429398858348573934_n.jpg",
+      href: "/collections/kota-doria",
+      tag: "LIGHTWEIGHT GRACE",
+      desc: "হালকা, আরামদায়ক ও এলিগ্যান্ট জ্যামিতিক চেক বুননের কোটা ডোরিয়া শাড়ির সমাহার।",
     },
     {
-      title: "Luxury Karchupi & Organza",
-      image: "/duikonna-assets/product-03-royal-yellow.jpg",
-      href: "/collections/luxury-karchupi-saree",
-      tag: "COUTURE EMBROIDERY",
-      desc: "নিপুণ হাতের কারচুপি, কাটদানা ও জারদৌসি কারুকাজ সংবলিত রাজকীয় ডিজাইনার শাড়ি।",
+      title: "Tissue Silk Glamour",
+      image: "/tafa-assets/474143491_122137977218551800_4193529813524671445_n.jpg",
+      href: "/collections/tissue-silk",
+      tag: "FESTIVE DRAPE",
+      desc: "আলো-আঁধারি শাইন ও প্রিমিয়াম টিস্যু সিল্ক ফেব্রিকের আভিজাত্য, সাথে ম্যাচিং ব্লাউজ পিস।",
     },
     {
-      title: "Pastel Heritage Muslin",
-      image: "/duikonna-assets/fb_photo_3.jpg",
-      href: "/collections/pastel-heritage-muslin",
-      tag: "ELEGANT PASTELS",
-      desc: "হালকা পিচ, ল্যাভেন্ডার ও মিন্ট শেডের আধুনিক মার্জিত ঐতিহ্যের মেলবন্ধন।",
+      title: "Semi-Silk Traditional",
+      image: "/tafa-assets/473789973_122137977710551800_2773340889260662282_n.jpg",
+      href: "/collections/semi-silk",
+      tag: "AFFORDABLE LUXURY",
+      desc: "প্রতিদিনের উৎসব ও স্পেশাল অকেশনের জন্য প্রিমিয়াম সেমি সিল্ক শাড়ির আকর্ষণীয় সম্ভার।",
     },
     {
-      title: "Shamima Nasrin Curated Masterpieces",
-      image: "/duikonna-assets/fb_photo_6.jpg",
-      href: "/collections/dhakai-muslin-saree",
-      tag: "FOUNDER'S CHOICE",
-      desc: "স্বত্বাধিকারী শামীমা নাসরিনের বিশেষ পছন্দের মাস্টারপিস শাড়ি ও নিকুঞ্জ-২ শোরুম স্পেশাল।",
+      title: "Exclusive Organza & Party Saree",
+      image: "/tafa-assets/473859664_122137976690551800_223405367683935398_n.jpg",
+      href: "/collections/exclusive-organza",
+      tag: "DHANMONDI FLAGSHIP",
+      desc: "ধানমন্ডি ৫ ফ্ল্যাগশিপ শোরুম স্পেশাল এক্সক্লুসিভ অর্গানজা ও গর্জিয়াস পার্টি ওয়্যার শাড়ি।",
     },
   ];
 
@@ -94,15 +94,15 @@ export default async function CollectionsPage() {
 
         {/* Luxury Header */}
         <div className="mt-10 mb-14 text-center">
-          <span className="inline-block px-3.5 py-1 rounded-full border border-[#8B0000]/30 bg-[#8B0000]/5 text-[#8B0000] text-[10px] uppercase tracking-[0.28em] font-bold mb-4">
-            ✦ DUI KONNA (দুই কন্যা) CURATIONS ✦
+          <span className="inline-block px-3.5 py-1 rounded-full border border-[#133827]/30 bg-[#133827]/5 text-[#133827] text-[10px] uppercase tracking-[0.28em] font-bold mb-4">
+            ✦ TAFA (তাফা) CURATIONS ✦
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#8B0000] font-serif">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#133827] font-serif">
             All Collections
           </h1>
           <div className="w-20 h-[2px] bg-[#D4AF37] mx-auto mt-5" />
           <p className="text-neutral-700 mt-4 text-sm md:text-base max-w-xl mx-auto font-sans">
-            ১০০% খাঁটি ঐতিহ্যবাহী ঢাকai মসলিন, রাজকীয় ব্রাইডাল রেড, হাতে বোনা জামদানি এবং এক্সক্লুসিভ কারচুপি কাজের শাড়ির পূর্ণাঙ্গ সম্ভার।
+            সবচেয়ে রিজনেবল প্রাইসে প্রিমিয়াম কালামকারী, টিস্যু কাতান, কোটা ডোরিয়া এবং উৎসব স্পেশাল টিস্যু সিল্ক শাড়ির পূর্ণাঙ্গ সম্ভার।
           </p>
         </div>
 
@@ -145,10 +145,10 @@ export default async function CollectionsPage() {
         {/* Quick Category Switcher */}
         <div className="border-t border-[#E8DFD5] pt-12 pb-8">
           <div className="flex items-center justify-between mb-6">
-            <h3 className="text-xl font-serif text-[#181513]">Shop by Category</h3>
+            <h3 className="text-xl font-serif text-[#121815]">Shop by Category</h3>
             <Link
               href="/categories"
-              className="text-xs uppercase tracking-widest font-bold text-[#8B0000] hover:underline"
+              className="text-xs uppercase tracking-widest font-bold text-[#133827] hover:underline"
             >
               View All Categories →
             </Link>
@@ -158,7 +158,7 @@ export default async function CollectionsPage() {
               <Link
                 key={cat.id}
                 href={`/collections/${cat.slug}`}
-                className="px-4 py-2 rounded-xl border border-[#E8DFD5] bg-white hover:bg-[#8B0000] hover:text-white transition-colors text-xs font-semibold uppercase tracking-wider"
+                className="px-4 py-2 rounded-xl border border-[#E8DFD5] bg-white hover:bg-[#133827] hover:text-white transition-colors text-xs font-semibold uppercase tracking-wider"
               >
                 {cat.name}
               </Link>

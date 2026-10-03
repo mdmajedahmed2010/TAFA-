@@ -1,9 +1,9 @@
 /**
- * Dui Konna (দুই কন্যা) — Application Constants
- * Exclusive Muslin Sarees, Authentic Dhakai Jamdani & Luxury Ethnic Couture
- * Official Facebook: https://www.facebook.com/duikonna01
- * Showroom: House #21/B, Road #01, Nikunja-2, Khilkhet, Dhaka-1229
- * Hotlines: 01339-364462 / +880 1741-954490
+ * TAFA (তাফা) — Application Constants
+ * Official Facebook: https://www.facebook.com/tafatonzehee
+ * Flagship Showroom: House 42/1, Road No 5, Dhanmondi, Dhaka 1209
+ * Hotlines: 01885-507455 / 01688-231132
+ * 404,000+ Followers Community
  */
 
 // Delivery Charges (BDT)
@@ -16,7 +16,7 @@ export const DELIVERY_CHARGE = {
 } as const;
 
 // Order Number Prefix
-export const ORDER_PREFIX = "DK";
+export const ORDER_PREFIX = "TF";
 
 // Product Status
 export const PRODUCT_STATUS = {
@@ -80,44 +80,46 @@ export const AUTH = {
   PASSWORD_RESET_EXPIRY: 60 * 60,
 } as const;
 
-// Business Info — Dui Konna (দুই কন্যা)
+// Business Info — TAFA (তাফা)
 export const BUSINESS = {
-  NAME: "Dui Konna",
-  NAME_SHORT: "Dui Konna",
-  NAME_BN: "দুই কন্যা",
-  PROPRIETOR: "Shamima Nasrin",
-  PROPRIETOR_BN: "শামীমা নাসরিন",
-  FOUNDER: "Shamima Nasrin",
-  FOUNDER_BN: "শামীমা নাসরিন",
-  TAGLINE: "The Most Unique Collection of Muslin Sarees & Ethnic Luxury Couture",
-  TAGLINE_SUB: "বাংলার ঐতিহ্যবাহী ঢাকai মসলিন ও এক্সক্লুসিভ শাড়ি • ৪৮৪,০০০+ আপুদের ভরসা",
-  TAGLINE_BN: "আমাদের রয়েছে মসলিন শাড়ির সবচেয়ে অনন্য কালেকশন এবং সেরা মান প্রদানের নিশ্চয়তা।",
-  MOTTO_BN: "শতবর্ষের ঐতিহ্য ও রাজকীয় আভিজাত্যে বোনা খাঁটি মসলিন ✨",
-  PHONE: "01339-364462",
-  PHONE_INTL: "+880 1339-364462",
-  PHONE_ALT: "01741-954490",
-  PHONE_ALT_INTL: "+880 1741-954490",
-  WHATSAPP: "+8801741954490",
-  WHATSAPP_LINK: "https://wa.me/8801741954490",
-  EMAIL: "shamimanasrin1239@gmail.com",
-  ADDRESS: "House #21/B, Road #01, Nikunja-2, Khilkhet, Dhaka-1229, Bangladesh",
-  ADDRESS_BN: "হাউস #২১/বি, রোড #০১, নিকুঞ্জ-২, খিলক্ষেত, ঢাকা-১২২৯, বাংলাদেশ",
+  NAME: "TAFA",
+  NAME_SHORT: "TAFA",
+  NAME_BN: "তাফা",
+  PROPRIETOR: "TAFA",
+  PROPRIETOR_BN: "তাফা",
+  FOUNDER: "TAFA",
+  FOUNDER_BN: "তাফা",
+  TAGLINE: "উৎসবকে সাজাই TAFA’র শাড়িতে • সবচেয়ে রিজনেবল প্রাইসে প্রিমিয়াম শাড়ির সমাহার",
+  TAGLINE_SUB: "ঐতিহ্যবাহী কালামকারি, কোটা ডোরিয়া, টিস্যু কাতান ও বুটিক শাড়ি • ৪০৪,০০০+ আপুদের ভরসা",
+  TAGLINE_BN: "উৎসবকে সাজাই TAFA’র শাড়িতে — প্রিমিয়াম শাড়ির অনন্য কালেকশন এবং সেরা মান প্রদানের নিশ্চয়তা।",
+  MOTTO_BN: "উৎসবকে সাজাই TAFA’র শাড়িতে ✨",
+  PHONE: "01885-507455",
+  PHONE_INTL: "+880 1885-507455",
+  PHONE_ALT: "01688-231132",
+  PHONE_ALT_INTL: "+880 1688-231132",
+  WHATSAPP: "+8801885507455",
+  WHATSAPP_LINK: "https://wa.me/8801885507455",
+  EMAIL: "tafatonzehee@gmail.com",
+  ADDRESS: "House 42/1, Road No 5, Dhanmondi, Dhaka 1209, Bangladesh",
+  ADDRESS_BN: "হাউস ৪২/১, রোড নং ৫, ধানমন্ডি, ঢাকা ১২০৯, বাংলাদেশ",
   CITY: "Dhaka",
   COUNTRY: "Bangladesh",
-  LOCATION_LANDMARK: "Nikunja-2, Khilkhet, Dhaka (Near Airport Road)",
-  FACEBOOK: "https://www.facebook.com/duikonna01",
-  INSTAGRAM: "https://www.instagram.com/duikonna01",
-  TIKTOK: "https://www.tiktok.com/@duikonna01",
-  YOUTUBE: "https://www.youtube.com/@duikonna01",
-  WEBSITE: "https://duikonna.com",
-  ESTABLISHED: "Exclusive Muslin Saree & Luxury Ethnic Fashion House in Dhaka",
-  FOLLOWERS: "484K+",
-  FOLLOWERS_EXACT: "484,200+ Followers",
+  LOCATION_LANDMARK: "Dhanmondi Road 5, Dhaka",
+  FACEBOOK: "https://www.facebook.com/tafatonzehee",
+  INSTAGRAM: "https://www.instagram.com/tafatonzehee",
+  TIKTOK: "https://www.tiktok.com/@tafatonzehee",
+  YOUTUBE: "https://www.youtube.com/@tafatonzehee",
+  WEBSITE: "https://tafatonzehee.com",
+  ESTABLISHED: "Premium Ethnic Sarees & Festive Boutique House in Dhanmondi, Dhaka",
+  MESSENGER: "https://m.me/tafatonzehee",
+  FOLLOWERS: "404K+",
+  FOLLOWERS_COUNT: "404K+",
+  FOLLOWERS_EXACT: "404,000+ Followers",
   RATING: "4.9 ★",
   RECOMMEND_RATE: "99%",
   OPEN_PARCEL_POLICY: true,
-  STORE_HOURS: "Everyday: 11:00 AM – 9:00 PM | Online 24/7 Hotline",
-  STORE_HOURS_BN: "প্রতিদিন: সকাল ১১:০০ – রাত ৯:০০ | অনলাইন ২৪/৭ হটলাইন ও ইনবক্স সেবা সক্রিয়",
+  STORE_HOURS: "Everyday: 10:30 AM – 9:00 PM | Online 24/7 Hotline",
+  STORE_HOURS_BN: "প্রতিদিন: সকাল ১০:৩০ – রাত ৯:০০ | অনলাইন ২৪/৭ হটলাইন ও ইনবক্স সেবা সক্রিয়",
   DELIVERY_CHARGE_INSIDE: 80,
   DELIVERY_CHARGE_OUTSIDE: 150,
   FREE_DELIVERY_MIN_ITEMS: 2,
@@ -135,13 +137,15 @@ export const COUPON_CODES: Record<
   string,
   { type: "percent" | "flat"; value: number; label: string }
 > = {
-  DUIKONNA10: { type: "percent", value: 10, label: "10% off with Dui Konna Special Promo" },
-  MUSLINVIP: { type: "percent", value: 15, label: "15% VIP exclusive discount on Muslin Sarees" },
-  EIDKONNA: { type: "percent", value: 15, label: "15% Festive Muslin Special" },
-  JAMDANI10: { type: "percent", value: 10, label: "10% Dhakai Jamdani Heritage Special" },
+  TAFA10: { type: "percent", value: 10, label: "10% off with TAFA Welcome Promo" },
+  TAFAVIP: { type: "percent", value: 15, label: "15% VIP exclusive discount on TAFA Sarees" },
+  UTSAB15: { type: "percent", value: 15, label: "15% Festive Saree Special" },
+  KATAN10: { type: "percent", value: 10, label: "10% Katan & Silk Special" },
   WELCOME5: { type: "percent", value: 5, label: "5% Welcome Discount" },
-  FLAT500: { type: "flat", value: 500, label: "৳500 flat discount on 2+ Muslin Sarees" },
+  FLAT300: { type: "flat", value: 300, label: "৳300 flat discount on 2+ Sarees" },
   // Backward compatibility aliases
+  DUIKONNA10: { type: "percent", value: 10, label: "10% off promo" },
+  MUSLINVIP: { type: "percent", value: 15, label: "15% VIP discount" },
   ORNI10: { type: "percent", value: 10, label: "10% promotional discount" },
   QUEENVIP: { type: "percent", value: 15, label: "15% VIP discount" },
   TAZEEN10: { type: "percent", value: 10, label: "10% off your order" },

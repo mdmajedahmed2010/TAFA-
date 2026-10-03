@@ -1,21 +1,20 @@
 "use client";
 
 /**
- * Dui Konna (দুই কন্যা) — Trust Badges & Open Parcel Assurance
- * Authentic Dhakai Muslin, Dhakai Jamdani & Luxury Sarees
- * Nikunja-2, Khilkhet, Dhaka-1229 • Facebook: https://www.facebook.com/duikonna01
- * 484,000+ Followers • Open Parcel Inspection Nationwide
+ * TAFA (তাফা) — Trust Badges & Open Parcel Assurance
+ * House 42/1, Road 5, Dhanmondi, Dhaka 1209 • FB: https://www.facebook.com/tafatonzehee
+ * 404,000+ Followers • "সবচেয়ে রিজনেবল প্রাইসে প্রিমিয়াম শাড়ির সমাহার"
  */
 
 import { useEffect, useRef, useState } from "react";
-import { CreditCard, Award, Users, Sparkles, Eye, PhoneCall, Store } from "lucide-react";
+import { CreditCard, Award, Users, Eye, PhoneCall, Store } from "lucide-react";
 import { BUSINESS } from "@/lib/constants";
 
 const badges = [
   {
     icon: Award,
-    title: "১০০% খাঁটি ঢাকাই মসলিন",
-    description: "Authentic Handloom Heritage",
+    title: "সবচেয়ে রিজনেবল প্রাইস",
+    description: "প্রিমিয়াম শাড়ির অনন্য সমাহার",
   },
   {
     icon: Eye,
@@ -29,12 +28,12 @@ const badges = [
   },
   {
     icon: Store,
-    title: "নিকুঞ্জ-২ ফ্ল্যাগশিপ শোরুম",
-    description: "হাউজ ২১/বি, রোড ০১, খিলক্ষেত (১১টা-৯টা)",
+    title: "ধানমন্ডি ৫ ফ্ল্যাগশিপ শোরুম",
+    description: "বাড়ি ৪২/১, রোড ৫, ধানমন্ডি (১০:৩০-৯:০০)",
   },
   {
     icon: Users,
-    title: "৪৮৪,০০০+ আপুদের পরিবার",
+    title: "৪০৪,০০০+ আপুদের পরিবার",
     description: "Official Facebook Community",
   },
   {
@@ -82,8 +81,8 @@ export function TrustBadges() {
                 transitionDuration: "500ms",
               }}
             >
-              <div className="size-11 rounded-full bg-[#FAF7F2] text-[#8B0000] flex items-center justify-center mb-3 border border-[#D4AF37]/40">
-                <badge.icon className="h-5 w-5 text-[#8B0000]" />
+              <div className="size-11 rounded-full bg-[#FAF7F2] text-[#133827] flex items-center justify-center mb-3 border border-[#D4AF37]/50 shadow-xs">
+                <badge.icon className="h-5 w-5 text-[#133827]" />
               </div>
               <h3 className="text-xs md:text-sm font-bold text-[#1A1A1A] leading-tight">
                 {badge.title}

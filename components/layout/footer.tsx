@@ -1,27 +1,28 @@
 "use client";
 
 /**
- * Dui Konna (দুই কন্যা) — Luxury Haute Couture Footer
- * Exclusive Muslin Sarees, Authentic Dhakai Jamdani & Luxury Ethnic Couture
- * Showroom: House #21/B, Road #01, Nikunja-2, Khilkhet, Dhaka-1229
- * Facebook: https://www.facebook.com/duikonna01 • 484,000+ Followers
+ * TAFA (তাফা) — Luxury Haute Couture Footer
+ * Authentic Kalamkari, Festive Tissue Katan & Boutique Sarees
+ * Flagship Showroom: House 42/1, Road No 5, Dhanmondi, Dhaka 1209
+ * Facebook: https://www.facebook.com/tafatonzehee • 404,000+ Followers
  * Open Parcel Inspection Nationwide
  */
 
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { MessageCircle, ArrowUpRight, Sparkles, Check, Phone, Mail, MapPin, Clock } from "lucide-react";
+import { ArrowUpRight, Check, Phone, Mail, MapPin, Clock } from "lucide-react";
 import { BUSINESS } from "@/lib/constants";
 import { toast } from "sonner";
+import { ASSETS } from "@/lib/demo-data";
 
 const shopLinks = [
-  { href: "/collections/exclusive-muslin", label: "Exclusive Muslin Sarees" },
-  { href: "/collections/dhakai-jamdani", label: "Authentic Dhakai Jamdani" },
-  { href: "/collections/bridal-festive", label: "Bridal & Festive Red Muslin" },
-  { href: "/collections/luxury-karchupi", label: "Luxury Karchupi & Organza" },
-  { href: "/collections/pastel-heritage", label: "Pastel Heritage Muslin" },
-  { href: "/collections/muslin-four-piece", label: "Exclusive Muslin 4-Piece Sets" },
+  { href: "/collections/kalamkari-sarees", label: "Kalamkari Boutique Sarees" },
+  { href: "/collections/kota-doria-linen", label: "Kota Doria & Linen Silk" },
+  { href: "/collections/festive-tissue-katan", label: "Festive Tissue Katan & Silk" },
+  { href: "/collections/warli-folk-art", label: "Handcrafted Warli & Linen" },
+  { href: "/collections/jamdani-gadwal", label: "Dhakai Jamdani & Gadwal" },
+  { href: "/collections/showroom-specials", label: "Showroom Special Curations" },
 ];
 
 const helpLinks = [
@@ -29,10 +30,10 @@ const helpLinks = [
   { href: "/delivery-info", label: "Delivery & Shipping Info (৳80/৳150)" },
   { href: "/refund-policy", label: "Open Parcel & Return Policy" },
   { href: "/faq", label: "Frequently Asked Questions (FAQ)" },
-  { href: "/contact", label: "Showroom Location & Hotlines" },
+  { href: "/contact", label: "Dhanmondi Showroom & Hotlines" },
   { href: "/terms", label: "Terms & Conditions" },
   { href: "/privacy-policy", label: "Privacy Policy" },
-  { href: "/about", label: "About Dui Konna & Shamima Nasrin" },
+  { href: "/about", label: "About TAFA & Brand Vision" },
 ];
 
 export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
@@ -43,38 +44,38 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
     e.preventDefault();
     if (!email) return;
     setSubscribed(true);
-    toast.success("Welcome to Dui Konna VIP Heritage Club! Use promo code DUIKONNA10 for 10% off your order.");
+    toast.success("Welcome to TAFA VIP Club! Use promo code TAFA10 for 10% off your order.");
   };
 
   return (
     <>
-      <footer className="bg-[#121214] text-[#FAF7F2] relative overflow-hidden border-t border-[#D4AF37]/30">
+      <footer className="bg-[#0D261A] text-[#FAF7F2] relative overflow-hidden border-t border-[#D4AF37]/30">
         {/* Giant Watermark Typography */}
-        <div className="absolute -bottom-10 right-0 pointer-events-none select-none text-[80px] md:text-[160px] font-bold text-white/[0.03] font-heading leading-none">
-          DUI KONNA
+        <div className="absolute -bottom-10 right-0 pointer-events-none select-none text-[80px] md:text-[180px] font-bold text-white/[0.03] font-heading leading-none">
+          TAFA
         </div>
 
         {/* 1. VIP Club Newsletter Banner */}
-        <div className="border-b border-white/10 py-16 md:py-20 relative bg-gradient-to-b from-transparent to-[#181513]/70">
+        <div className="border-b border-white/10 py-16 md:py-20 relative bg-gradient-to-b from-transparent to-[#133827]/70">
           <div className="container mx-auto px-6 md:px-12">
             <div className="max-w-4xl mx-auto text-center space-y-4">
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/40">
-                <span className="text-[#D4AF37] text-xs">🦋</span>
+                <span className="text-[#D4AF37] text-xs">🌸</span>
                 <span className="text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#D4AF37]">
-                  DUI KONNA VIP HERITAGE CLUB
+                  TAFA VIP FESTIVE CLUB
                 </span>
               </div>
               <h3 className="text-3xl md:text-5xl font-bold tracking-tight text-white font-heading">
-                মসলিন ও জামদানির এক্সক্লুসিভ কালেকশন সবার আগে
+                উৎসবকে সাজাই TAFA’র শাড়িতে
               </h3>
               <p className="text-xs md:text-sm text-neutral-300 max-w-lg mx-auto leading-relaxed">
-                ৪৮৪,০০০+ আপুদের বিশ্বস্ত পরিবারে যুক্ত থাকুন। নতুন ঢাকাই মসলিন শাড়ি, ব্রাইডাল কালেকশন ও স্পেশাল শোরুম অফারের তাৎক্ষণিক আপডেট পেতে সাবস্ক্রাইব করুন।
+                ৪০৪,০০০+ আপুদের বিশ্বস্ত পরিবারে যুক্ত থাকুন। নতুন কালামকারি, কোটা ডোরিয়া, ব্রাইডাল কাতান ও স্পেশাল ধানমন্ডি শোরুম অফারের তাৎক্ষণিক আপডেট পেতে সাবস্ক্রাইব করুন।
               </p>
 
               {subscribed ? (
                 <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-emerald-950/80 border border-emerald-500/50 text-emerald-300 text-xs font-bold tracking-wider">
                   <Check className="h-4 w-4" />
-                  <span>Welcome! Use Promo Code: DUIKONNA10 (10% OFF)</span>
+                  <span>Welcome to TAFA! Use Promo Code: TAFA10 (10% OFF)</span>
                 </div>
               ) : (
                 <form
@@ -91,7 +92,7 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
                   />
                   <button
                     type="submit"
-                    className="h-13 px-8 rounded-full bg-[#8B0000] hover:bg-[#A0121A] text-[#D4AF37] hover:text-white border border-[#D4AF37]/60 text-xs font-bold uppercase tracking-[0.16em] transition-all shadow-lg active:scale-98 cursor-pointer"
+                    className="h-13 px-8 rounded-full bg-[#133827] hover:bg-[#1A4B35] text-[#D4AF37] hover:text-white border border-[#D4AF37]/60 text-xs font-bold uppercase tracking-[0.16em] transition-all shadow-lg active:scale-98 cursor-pointer"
                   >
                     Subscribe
                   </button>
@@ -111,25 +112,25 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
                   src={
                     typeof settings?.store_logo === "string" && settings.store_logo
                       ? settings.store_logo
-                      : "/duikonna-assets/logo.png"
+                      : ASSETS.logo
                   }
-                  alt="Dui Konna (দুই কন্যা)"
+                  alt="TAFA (তাফা)"
                   width={54}
                   height={54}
                   className="h-13 w-13 object-cover rounded-full ring-2 ring-[#D4AF37] group-hover:scale-105 transition-transform bg-black"
                 />
                 <div>
                   <p className="text-xl font-bold text-white tracking-wider font-heading leading-tight flex items-center gap-1.5">
-                    <span className="text-[#D4AF37] text-base">🦋</span>
-                    Dui Konna
+                    <span className="text-[#D4AF37] text-base">🌸</span>
+                    TAFA
                   </p>
                   <p className="text-[10px] text-[#D4AF37] font-semibold tracking-[0.2em] uppercase">
-                    দুই কন্যা • NIKUNJA-2, DHAKA
+                    তাফা • DHANMONDI 5, DHAKA
                   </p>
                 </div>
               </Link>
               <p className="text-xs md:text-sm text-neutral-300 leading-relaxed max-w-sm">
-                &ldquo;আমাদের পেজে রয়েছে ঢাকাই মসলিন শাড়ির সবচেয়ে অনন্য কালেকশন এবং আমরা সবসময় সেরা পণ্য পরিবেশনে অঙ্গীকারবদ্ধ।&rdquo; শামীমা নাসরিনের পরিচালনায় খাঁটি হ্যান্ডক্রাফটেড ঐতিহ্য ও উন্মুক্ত পার্সেল চেক করার ১০০% নিরাপত্তা।
+                &ldquo;উৎসবকে সাজাই TAFA’র শাড়িতে — সবচেয়ে রিজনেবল প্রাইসে প্রিমিয়াম শাড়ির অনন্য সমাহার।&rdquo; ঐতিহ্যবাহী কালামকারি, কোটা ডোরিয়া, লিনেন ও কাতানের খাঁটি সম্ভার এবং পার্সেল খুলে চেক করে পেমেন্ট করার শতভাগ নিশ্চিন্ত সুবিধা।
               </p>
 
               {/* Direct Contact Info */}
@@ -137,13 +138,13 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
                 <p className="flex items-start gap-2.5">
                   <MapPin className="h-4 w-4 text-[#D4AF37] shrink-0 mt-0.5" />
                   <span>
-                    <strong>শোরুম:</strong> {BUSINESS.ADDRESS}
+                    <strong>ফ্ল্যাগশিপ শোরুম:</strong> {BUSINESS.ADDRESS}
                   </span>
                 </p>
                 <p className="flex items-center gap-2.5">
                   <Clock className="h-4 w-4 text-[#D4AF37] shrink-0" />
                   <span>
-                    <strong>শোরুম সময়সূচি:</strong> প্রতিদিন সকাল ১১:০০ – রাত ৯:০০
+                    <strong>শোরুম সময়সূচি:</strong> প্রতিদিন সকাল ১০:৩০ – রাত ৯:০০
                   </span>
                 </p>
                 <p className="flex items-center gap-2.5">
@@ -210,9 +211,9 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
                     href={BUSINESS.FACEBOOK}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-[#8B0000] text-xs font-medium text-white transition-colors border border-white/20 flex items-center gap-1.5"
+                    className="px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-[#133827] text-xs font-medium text-white transition-colors border border-white/20 flex items-center gap-1.5"
                   >
-                    <span>Facebook (484K+)</span>
+                    <span>Facebook (404K+)</span>
                     <ArrowUpRight className="h-3 w-3 text-[#D4AF37]" />
                   </a>
                   <a
@@ -221,27 +222,27 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
                     rel="noopener noreferrer"
                     className="px-3.5 py-1.5 rounded-full bg-emerald-950/80 hover:bg-emerald-900 text-xs font-medium text-emerald-300 transition-colors border border-emerald-500/40 flex items-center gap-1.5"
                   >
-                    <span>WhatsApp</span>
+                    <span>WhatsApp Order</span>
                   </a>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Bottom Bar: Copyright & Payment Icons */}
+          {/* Bottom Bar: Copyright & Guarantee Icons */}
           <div className="mt-14 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-neutral-400">
             <div className="flex items-center gap-2">
-              <span className="text-[#D4AF37]">🦋</span>
+              <span className="text-[#D4AF37]">🌸</span>
               <p>
-                &copy; {new Date().getFullYear()} Dui Konna (দুই কন্যা). Owner Shamima Nasrin. All Rights Reserved.
+                &copy; {new Date().getFullYear()} TAFA (তাফা). House 42/1, Road 5, Dhanmondi, Dhaka. All Rights Reserved.
               </p>
             </div>
             <div className="flex items-center gap-4 text-[11px] text-neutral-400">
               <span>✓ Open Parcel Inspection</span>
               <span>•</span>
-              <span>✓ Cash on Delivery</span>
+              <span>✓ Cash on Delivery Nationwide</span>
               <span>•</span>
-              <span>✓ 100% Authentic Handloom Muslin</span>
+              <span>✓ Dhanmondi Outlet Trial &amp; Exchange</span>
             </div>
           </div>
         </div>

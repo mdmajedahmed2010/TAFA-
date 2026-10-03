@@ -1,5 +1,5 @@
 /**
- * Dui Konna (দুই কন্যা) — Collection/Category Page
+ * TAFA | Dhaka (তাফা) — Collection/Category Page
  * Route: /collections/[slug]
  */
 
@@ -26,15 +26,15 @@ interface CollectionPageProps {
 const specialCategories: Record<string, { name: string; description: string }> = {
   "new-arrivals": {
     name: "New Arrivals",
-    description: "Discover our latest authentic Dhakai Muslin sarees, Dhakai Jamdani weaves, and handcrafted luxury karchupi partywear.",
+    description: "Discover our latest authentic Kalamkari cotton, Tissue Katan, Kota Doria weaves, and festive saree curations.",
   },
   featured: {
     name: "Featured Collections",
-    description: `Handpicked signature Dhakai Muslin sarees & heritage drape curations by ${BUSINESS.NAME}.`,
+    description: `Handpicked signature partywear sarees & elegant drape curations by ${BUSINESS.NAME}.`,
   },
   sale: {
     name: "Special Offers",
-    description: "Exclusive luxury Dhakai Muslin saree offers with nationwide Open Parcel inspection & showroom pickup.",
+    description: "Exclusive saree offers with nationwide Open Parcel inspection & showroom trial at Dhanmondi, Dhaka.",
   },
 };
 
@@ -200,13 +200,13 @@ export default async function CollectionPage({ params, searchParams }: Collectio
         items={[{ label: "Collections", href: "/collections" }, { label: categoryName }]}
       />
 
-      <div className="mt-6 mb-10 bg-gradient-to-r from-[#8B0000] via-[#5A0000] to-[#8B0000] text-[#FAF7F2] p-8 md:p-14 rounded-3xl border border-[#D4AF37]/30 shadow-xl text-center relative overflow-hidden">
+      <div className="mt-6 mb-10 bg-gradient-to-r from-[#133827] via-[#0A1F16] to-[#133827] text-[#FAF7F2] p-8 md:p-14 rounded-3xl border border-[#D4AF37]/30 shadow-xl text-center relative overflow-hidden">
         {/* Subtle background glow */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.2),transparent_70%)] pointer-events-none" />
         
         <div className="relative z-10 max-w-2xl mx-auto">
           <span className="inline-block px-3.5 py-1 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/40 text-[10px] font-extrabold uppercase tracking-[0.24em] mb-3 text-[#D4AF37]">
-            ✦ DUI KONNA (দুই কন্যা) ✦
+            ✦ TAFA (তাফা) ✦
           </span>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight font-serif mb-3 text-white">
             {categoryName}

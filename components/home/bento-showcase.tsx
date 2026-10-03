@@ -1,10 +1,9 @@
 "use client";
 
 /**
- * Dui Konna (দুই কন্যা) — Asymmetric Haute Bento Showcase
- * Showcasing Authentic Dhakai Muslin, Dhakai Jamdani & Luxury Karchupi Sarees
- * Nikunja-2, Khilkhet, Dhaka-1229 • Facebook: https://www.facebook.com/duikonna01
- * 484,000+ Followers • Open Parcel Inspection Nationwide
+ * TAFA (তাফা) — Asymmetric Haute Bento Showcase
+ * House 42/1, Road 5, Dhanmondi, Dhaka 1209 • FB: https://www.facebook.com/tafatonzehee
+ * 404,000+ Followers • "সবচেয়ে রিজনেবল প্রাইসে প্রিমিয়াম শাড়ির সমাহার"
  */
 
 import Link from "next/link";
@@ -26,54 +25,54 @@ interface BentoItem {
 
 const BENTO_ITEMS: BentoItem[] = [
   {
-    title: "Exclusive Dhakai Muslin Saree",
+    title: "Traditional Kalamkari Cotton Silk",
     subtitle:
-      "খাঁটি ঢাকাই মসলিনের রেশমি জমিন, মাস্টার উইভারদের নিখুঁত তাঁত বুনন ও রয়্যাল জরির অনবদ্য মোটিফ। বাংলার ঐতিহ্যবাহী আভিজাত্যের শিখর।",
-    tag: "EXCLUSIVE MUSLIN",
-    priceNote: "From ৳21,500",
-    image: ASSETS.product3,
-    href: "/categories/exclusive-muslin-saree",
+      "হাতে আঁকা ঐতিহ্যবাহী ময়ূর ও হাতির ট্র্যাডিশনাল মোটিফ, ব্ল্যাক ও মাস্টার্ড ইয়েলো কনট্রাস্টের নান্দনিক ঐতিহ্যবাহী আঁচল।",
+    tag: "KALAMKARI HERITAGE",
+    priceNote: "From ৳1,850",
+    image: ASSETS.kalamkariBlack,
+    href: "/categories/kalamkari-saree",
     gridClass: "lg:col-span-7 lg:row-span-2 min-h-[380px] lg:min-h-[520px]",
-    accentColor: "#8B0000",
+    accentColor: "#133827",
   },
   {
-    title: "Bridal & Festive Red Muslin",
+    title: "Festive Pure Gold Tissue Katan",
     subtitle:
-      "বিয়ে, পানচিনি ও মহোৎসবের জন্য গাঢ় লাল ও রয়্যাল গোল্ডেন জরির খাঁটি ঢাকাই মসলিন শাড়ি।",
-    tag: "BRIDAL RED",
-    priceNote: "From ৳25,500",
-    image: ASSETS.heroBanner,
-    href: "/categories/bridal-festive-red-muslin",
+      "বিয়ে ও জমকালো পার্টির সাজে গাঢ় গোল্ডেন শিimmer এবং জারদৌসি পাড়ের রাজকীয় ব্রাইডাল টিস্যু কাতান শাড়ি।",
+    tag: "FESTIVE KATAN",
+    priceNote: "From ৳3,450",
+    image: ASSETS.tissueKatanGold,
+    href: "/categories/festive-tissue-katan",
     gridClass: "lg:col-span-5 min-h-[250px] lg:min-h-[245px]",
   },
   {
-    title: "Luxury Karchupi & Organza",
+    title: "Kota Doria & Linen Silk Festive",
     subtitle:
-      "ডাস্টি লিলাক ও ল্যাভেন্ডার প্যাস্টেল শেডে সূক্ষ্ম কারচুপি কাজ, পার্ল ও স্টোনের চোখজুড়ানো কারুকাজ।",
-    tag: "KARCHUPI COUTURE",
-    priceNote: "From ৳28,000",
-    image: ASSETS.product8,
-    href: "/categories/luxury-karchupi-organza",
+      "গাঢ় লাল রঙের জমকালো ও আরামদায়ক কোটা ডোরিয়া এবং লিনেন সিল্ক শাড়ি—যে কোনো উৎসবে পরার জন্য নিখুঁত।",
+    tag: "KOTA DORIA",
+    priceNote: "From ৳1,950",
+    image: ASSETS.kotaCrimsonRed,
+    href: "/categories/kota-doria-linen",
     gridClass: "lg:col-span-5 min-h-[250px] lg:min-h-[245px]",
   },
   {
-    title: "Authentic Dhakai Jamdani",
+    title: "Handcrafted Warli Folk Art Linen",
     subtitle:
-      "পার্ল হোয়াইট ও মাল্টিকালার জ্যামিতিক নকশার ঐতিহ্যবাহী জামদানি শাড়ি—বাংলার শতবর্ষী গৌরব।",
-    tag: "DHAKAI JAMDANI",
-    priceNote: "From ৳27,500",
-    image: ASSETS.product5,
-    href: "/categories/dhakai-jamdani-saree",
+      "প্লাম ওয়াইন শ্যাডোতে ভারতীয় লোকশিল্পের ট্রাইবাল ফিগার ও জ্যামিতিক নকশার অনবদ্য প্রকাশ।",
+    tag: "WARLI FOLK ART",
+    priceNote: "From ৳1,950",
+    image: ASSETS.warliArtPlum,
+    href: "/categories/warli-folk-art",
     gridClass: "lg:col-span-6 min-h-[260px] lg:min-h-[300px]",
   },
   {
-    title: "Pastel Heritage Handloom Muslin",
+    title: "Embroidered Shimmer Tissue Kota",
     subtitle:
-      "মিন্ট গ্রিন, পেস্তা ও স্লেট অ্যাশ শেডের স্নিগ্ধ ও আরামদায়ক তাঁত বোনা শাড়ি কালেকশন।",
-    tag: "PASTEL HERITAGE",
-    priceNote: "From ৳21,500",
-    image: ASSETS.product2,
-    href: "/categories/pastel-heritage-muslin",
+      "পিচ রোজ শ্যাডোতে মাল্টিকালার থ্রেড ফ্লোরাল এমব্রয়ডারি ও গোল্ডেন সেলফ-বর্ডার।",
+    tag: "TISSUE KOTA",
+    priceNote: "From ৳2,250",
+    image: ASSETS.tissueKotaPeach,
+    href: "/categories/embroidered-tissue",
     gridClass: "lg:col-span-6 min-h-[260px] lg:min-h-[300px]",
   },
 ];
@@ -87,21 +86,21 @@ export function BentoShowcase() {
           <div className="max-w-xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#D4AF37]/50 mb-3 shadow-xs">
               <Crown className="h-3 w-3 text-[#D4AF37]" />
-              <span className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#8B0000]">
-                SHAMIMA NASRIN&apos;S CURATED PICKS
+              <span className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#133827]">
+                TAFA CURATED SIGNATURES
               </span>
             </div>
             <h2 className="text-3xl md:text-5xl font-bold text-[#1A1A1A] font-heading tracking-tight">
-              Dui Konna Couture Wardrobe
+              TAFA Designer Saree Wardrobe
             </h2>
             <p className="mt-3 text-sm md:text-base text-neutral-600 font-medium">
-              দুই কন্যার নিজস্ব ডিজাইনে প্রস্তুতকৃত খাঁটি ঢাকাই মসলিন, জামদানি ও লাক্সারি কারচুপি শাড়ির এক্সক্লুসিভ সম্ভার। ডেলিভারিম্যানের সামনে পার্সেল খুলে দেখে পেমেন্ট করার নিশ্চিন্ত সুবিধাসহ বাংলাদেশের সর্বত্র ক্যাশ অন হোম ডেলিভারি।
+              উৎসবকে সাজাই TAFA’র শাড়িতে! কালামকারি কটন সিল্ক, ফেস্টিভ টিস্যু কাতান, কোটা ডোরিয়া এবং এক্সক্লুসিভ ডিজাইনার শাড়ির সবচেয়ে রিজনেবল প্রাইসের অনন্য সম্ভার। পার্সেল খুলে দেখে চেক করে পেমেন্ট করার নিশ্চয়তা।
             </p>
           </div>
 
           <Link
             href="/categories"
-            className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-[#8B0000] hover:text-[#D4AF37] transition-colors group/link self-start md:self-end"
+            className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-[#133827] hover:text-[#D4AF37] transition-colors group/link self-start md:self-end font-semibold"
           >
             <span>View All Categories</span>
             <ArrowUpRight className="h-4 w-4 text-[#D4AF37] group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />

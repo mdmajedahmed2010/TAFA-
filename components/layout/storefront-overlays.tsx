@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * Dui Konna (দুই কন্যা) — Storefront Client Overlays
+ * TAFA | Dhaka (তাফা) — Storefront Client Overlays
  * Wraps dynamic overlays in a Client Component boundary for Next.js App Router
  */
 
@@ -45,8 +45,8 @@ export function StorefrontOverlays() {
       <BackToTop />
       <FloatingChat 
         phoneNumber={BUSINESS.PHONE} 
-        whatsappNumber="8801741954490"
-        messengerUrl="https://m.me/duikonna01" 
+        whatsappNumber={BUSINESS.PHONE_ALT}
+        messengerUrl={BUSINESS.MESSENGER} 
       />
       <PageTracker />
     </>

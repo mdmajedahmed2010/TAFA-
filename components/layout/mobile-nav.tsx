@@ -1,10 +1,10 @@
 "use client";
 
 /**
- * Dui Konna (দুই কন্যা) — Mobile Navigation Overlay
- * Exclusive Muslin Sarees, Authentic Dhakai Jamdani & Luxury Ethnic Couture
- * Showroom: House #21/B, Road #01, Nikunja-2, Khilkhet, Dhaka-1229
- * Facebook: https://www.facebook.com/duikonna01 • 484,000+ Followers
+ * TAFA (তাফা) — Mobile Navigation Overlay
+ * Authentic Kalamkari, Kota Doria & Festive Tissue Katan Sarees
+ * Flagship Showroom: House 42/1, Road No 5, Dhanmondi, Dhaka 1209
+ * Facebook: https://www.facebook.com/tafatonzehee • 404,000+ Followers
  * Open Parcel Inspection Nationwide
  */
 
@@ -15,6 +15,7 @@ import Image from "next/image";
 import { createPortal } from "react-dom";
 import { useCartStore } from "@/store/cart-store";
 import { BUSINESS } from "@/lib/constants";
+import { ASSETS } from "@/lib/demo-data";
 
 interface MobileNavProps {
   links: { href: string; label: string }[];
@@ -45,39 +46,35 @@ export function MobileNav({ links }: MobileNavProps) {
     setActiveAccordion(activeAccordion === label ? null : label);
   };
 
-  // Subcategories matching Dui Konna collections
+  // Subcategories matching TAFA collections
   const categoriesWithSubs: Record<string, string[]> = {
-    "Exclusive Muslin": [
-      "Shop All Exclusive Muslin",
-      "Royal Mustard Gold Dhakai Muslin",
-      "Terracotta Rust Orange Butterfly Muslin",
-      "Mauve Plum Chevron Zigzag Muslin",
-      "Dual-Tone Sage Green & Magenta Muslin",
+    "Kalamkari Sarees": [
+      "Shop All Kalamkari Sarees",
+      "Midnight Black & Mustard Peacock Saree",
+      "Sage Green & Royal Purple Kalamkari Saree",
+      "Traditional Peacock & Elephant Zari Weaves",
+    ],
+    "Kota Doria & Linen": [
+      "Shop All Kota Doria & Linen",
+      "Crimson Red Festive Kota Saree",
+      "Peacock Teal Green Kota Saree",
+      "Midnight Navy Blue Kota Saree",
+    ],
+    "Festive Tissue Katan": [
+      "Shop All Festive Tissue Katan",
+      "Pure Gold Festive Tissue Katan Bridal Saree",
+      "Royal Champagne Gold Tissue Silk Saree",
+      "Peach Rose Shimmer Tissue Kota Silk",
+    ],
+    "Warli Art Sarees": [
+      "Shop All Warli Art Sarees",
+      "Plum Wine Tribal Warli Linen Saree",
+      "Handcrafted Folk Art Motifs",
     ],
     "Dhakai Jamdani": [
       "Shop All Dhakai Jamdani",
-      "Pearl White Multicolor Geometric Jamdani",
-      "Traditional Handloom Heritage Weaves",
-    ],
-    "Bridal Red Muslin": [
-      "Shop All Bridal & Festive Red Muslin",
-      "Royal Red Bridal Muslin Saree Trio",
-      "Heavy Zari & Karchupi Bridal Masterpieces",
-    ],
-    "Luxury Karchupi": [
-      "Shop All Luxury Karchupi",
-      "Dusty Lilac Lavender Karchupi",
-      "Dusty Mauve Full Drape Floral Karchupi",
-    ],
-    "Pastel Heritage": [
-      "Shop All Pastel Heritage Muslin",
-      "Seafoam Mint Green Butterfly Muslin",
-      "Light Pistachio Lime Zari Muslin",
-      "Slate Silver Ash Pastel Geometric Muslin",
-    ],
-    "4-Piece Sets": [
-      "Shop All 4-Piece Sets",
-      "Exclusive Muslin Hand-Embroidered Dress Set",
+      "Traditional Heritage Weaves",
+      "Festive Jamdani & Gadwal Specials",
     ],
   };
 
@@ -89,7 +86,7 @@ export function MobileNav({ links }: MobileNavProps) {
         className="lg:hidden flex items-center justify-center size-10 text-foreground/80 hover:bg-neutral-100 rounded-full transition-all duration-200"
         aria-label="Open navigation menu"
       >
-        <Menu className="h-6 w-6 text-[#8B0000]" strokeWidth={1.75} />
+        <Menu className="h-6 w-6 text-[#133827]" strokeWidth={1.75} />
       </button>
 
       {/* Premium Full-Screen Navigation Panel Overlay */}
@@ -98,22 +95,22 @@ export function MobileNav({ links }: MobileNavProps) {
         createPortal(
           <div className="fixed top-0 left-0 w-screen h-[100dvh] bg-[#FAF7F2] z-[9999] flex flex-col overflow-y-auto animate-slide-up">
             {/* Header bar within overlay */}
-            <div className="flex h-16 items-center justify-between px-6 border-b border-[#E8DFD3] bg-white">
+            <div className="flex h-16 items-center justify-between px-6 border-b border-[#E5DAC6] bg-white">
               <Link href="/" onClick={() => setOpen(false)} className="flex items-center gap-2.5">
                 <Image
-                  src="/duikonna-assets/logo.png"
-                  alt="Dui Konna (দুই কন্যা)"
+                  src={ASSETS.logo}
+                  alt="TAFA (তাফা)"
                   width={40}
                   height={40}
                   className="h-10 w-10 object-cover rounded-full ring-2 ring-[#D4AF37] bg-black"
                 />
                 <div className="flex flex-col">
-                  <span className="font-heading text-base font-extrabold tracking-tight text-[#8B0000] leading-none flex items-center gap-1">
-                    <span>🦋</span>
-                    Dui Konna
+                  <span className="font-heading text-base font-extrabold tracking-tight text-[#133827] leading-none flex items-center gap-1">
+                    <span>🌸</span>
+                    TAFA
                   </span>
                   <span className="text-[8.5px] font-semibold tracking-widest text-[#D4AF37] uppercase mt-0.5">
-                    দুই কন্যা • 484K+ FAMILY
+                    তাফা • 404K+ FAMILY
                   </span>
                 </div>
               </Link>
@@ -123,7 +120,7 @@ export function MobileNav({ links }: MobileNavProps) {
                 className="flex items-center justify-center size-10 text-foreground hover:bg-neutral-100 rounded-full transition-all duration-200"
                 aria-label="Close navigation menu"
               >
-                <X className="h-6 w-6 text-[#181513]" strokeWidth={1.5} />
+                <X className="h-6 w-6 text-[#121815]" strokeWidth={1.5} />
               </button>
             </div>
 
@@ -135,17 +132,17 @@ export function MobileNav({ links }: MobileNavProps) {
                   const isAccordionActive = activeAccordion === link.label;
 
                   return (
-                    <div key={link.href} className="border-b border-[#E8DFD3]/60">
+                    <div key={link.href} className="border-b border-[#E5DAC6]/60">
                       {hasSubCategories ? (
                         <div>
                           <button
                             onClick={() => toggleAccordion(link.label)}
-                            className="w-full min-h-[56px] py-4 flex justify-between items-center text-[15px] font-semibold tracking-wide text-[#181513] hover:text-[#8B0000] transition-colors"
+                            className="w-full min-h-[56px] py-4 flex justify-between items-center text-[15px] font-semibold tracking-wide text-[#121815] hover:text-[#133827] transition-colors"
                             aria-expanded={isAccordionActive}
                           >
                             {link.label}
                             {isAccordionActive ? (
-                              <ChevronUp className="h-4 w-4 text-[#8B0000]" strokeWidth={2} />
+                              <ChevronUp className="h-4 w-4 text-[#133827]" strokeWidth={2} />
                             ) : (
                               <ChevronDown className="h-4 w-4 text-muted-foreground" strokeWidth={1.5} />
                             )}
@@ -164,7 +161,7 @@ export function MobileNav({ links }: MobileNavProps) {
                                     key={subLabel}
                                     href={`${link.href}${urlParam}`}
                                     onClick={() => setOpen(false)}
-                                    className="text-[13.5px] text-neutral-600 hover:text-[#8B0000] transition-colors py-1 flex items-center justify-between"
+                                    className="text-[13.5px] text-neutral-600 hover:text-[#133827] transition-colors py-1 flex items-center justify-between"
                                   >
                                     <span>{subLabel}</span>
                                   </Link>
@@ -177,7 +174,7 @@ export function MobileNav({ links }: MobileNavProps) {
                         <Link
                           href={link.href}
                           onClick={() => setOpen(false)}
-                          className="block min-h-[56px] py-4 text-[15px] font-semibold tracking-wide text-[#181513] hover:text-[#8B0000] transition-colors"
+                          className="block min-h-[56px] py-4 text-[15px] font-semibold tracking-wide text-[#121815] hover:text-[#133827] transition-colors"
                         >
                           {link.label}
                         </Link>
@@ -188,39 +185,39 @@ export function MobileNav({ links }: MobileNavProps) {
               </div>
 
               {/* Secondary utility links */}
-              <div className="mt-8 pt-6 border-t border-[#E8DFD3] flex flex-col gap-4">
+              <div className="mt-8 pt-6 border-t border-[#E5DAC6] flex flex-col gap-4">
                 <Link
                   href="/track-order"
                   onClick={() => setOpen(false)}
-                  className="text-sm font-medium text-muted-foreground hover:text-[#8B0000] transition-colors"
+                  className="text-sm font-medium text-muted-foreground hover:text-[#133827] transition-colors"
                 >
                   Track My Order (অর্ডার ট্র্যাক করুন)
                 </Link>
                 <Link
                   href="/delivery-info"
                   onClick={() => setOpen(false)}
-                  className="text-sm font-medium text-muted-foreground hover:text-[#8B0000] transition-colors"
+                  className="text-sm font-medium text-muted-foreground hover:text-[#133827] transition-colors"
                 >
                   Delivery Info (ঢাকা ৮০৳ • বাইরে ১৫০৳ • ক্যাশ অন ডেলিভারি)
                 </Link>
                 <Link
                   href="/faq"
                   onClick={() => setOpen(false)}
-                  className="text-sm font-medium text-muted-foreground hover:text-[#8B0000] transition-colors"
+                  className="text-sm font-medium text-muted-foreground hover:text-[#133827] transition-colors"
                 >
                   Frequently Asked Questions (FAQ)
                 </Link>
                 <Link
                   href="/refund-policy"
                   onClick={() => setOpen(false)}
-                  className="text-sm font-medium text-muted-foreground hover:text-[#8B0000] transition-colors"
+                  className="text-sm font-medium text-muted-foreground hover:text-[#133827] transition-colors"
                 >
                   Open Parcel &amp; Return Policy (পার্সেল চেকিং সুবিধা)
                 </Link>
                 <Link
                   href="/contact"
                   onClick={() => setOpen(false)}
-                  className="text-sm font-medium text-muted-foreground hover:text-[#8B0000] transition-colors"
+                  className="text-sm font-medium text-muted-foreground hover:text-[#133827] transition-colors"
                 >
                   Showroom Location &amp; Hotlines ({BUSINESS.PHONE})
                 </Link>
@@ -228,7 +225,7 @@ export function MobileNav({ links }: MobileNavProps) {
             </nav>
 
             {/* Action cards in footer */}
-            <div className="px-6 py-5 border-t border-[#E8DFD3] bg-white mt-auto">
+            <div className="px-6 py-5 border-t border-[#E5DAC6] bg-white mt-auto">
               <a
                 href={BUSINESS.WHATSAPP_LINK}
                 target="_blank"
@@ -242,15 +239,15 @@ export function MobileNav({ links }: MobileNavProps) {
                 <Link
                   href="/account"
                   onClick={() => setOpen(false)}
-                  className="flex items-center justify-center gap-2 h-12 bg-[#FAF7F2] border border-[#E8DFD3] text-xs font-bold text-[#181513] hover:bg-neutral-100 rounded-xl transition-colors shadow-xs"
+                  className="flex items-center justify-center gap-2 h-12 bg-[#FAF7F2] border border-[#E5DAC6] text-xs font-bold text-[#121815] hover:bg-neutral-100 rounded-xl transition-colors shadow-xs"
                 >
-                  <User className="h-4 w-4 text-[#8B0000]" strokeWidth={1.5} />
+                  <User className="h-4 w-4 text-[#133827]" strokeWidth={1.5} />
                   My Account
                 </Link>
                 <Link
                   href="/cart"
                   onClick={() => setOpen(false)}
-                  className="flex items-center justify-center gap-2 h-12 bg-[#8B0000] text-[#D4AF37] text-xs font-bold hover:bg-[#660000] rounded-xl transition-colors shadow-xs"
+                  className="flex items-center justify-center gap-2 h-12 bg-[#133827] text-[#D4AF37] text-xs font-bold hover:bg-[#1A4B35] rounded-xl transition-colors shadow-xs"
                 >
                   <ShoppingBag className="h-4 w-4" strokeWidth={1.5} />
                   Bag ({cartCount})

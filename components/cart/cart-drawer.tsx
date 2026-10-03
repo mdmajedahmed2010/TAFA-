@@ -379,8 +379,8 @@ export function CartDrawer() {
 
                   {/* Hint */}
                   <p className="text-[9px] text-muted-foreground/50 uppercase tracking-widest">
-                    Try: <span className="font-mono font-bold text-foreground/40">DUIKONNA10</span>,{" "}
-                    <span className="font-mono font-bold text-foreground/40">MUSLINVIP</span>
+                    Try: <span className="font-mono font-bold text-foreground/40">TAFA10</span>,{" "}
+                    <span className="font-mono font-bold text-foreground/40">TAFASILK</span>
                   </p>
                 </div>
               )}

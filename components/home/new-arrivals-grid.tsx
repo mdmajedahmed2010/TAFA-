@@ -1,8 +1,8 @@
 "use client";
 
 /**
- * Dui Konna (দুই কন্যা) — New Arrivals Grid
- * Authentic Dhakai Muslin, Jamdani & Luxury Karchupi Sarees
+ * TAFA | Dhaka (তাফা) — New Arrivals Grid
+ * Authentic Sarees, Kalamkari, Tissue Katan & Luxury Drape
  */
 
 import Link from "next/link";
@@ -79,19 +79,19 @@ export function NewArrivalsGrid({ products }: NewArrivalsGridProps) {
         >
           <div>
             <div className="flex items-center gap-3 mb-3">
-              <span className="inline-block px-3 py-1 rounded-full border border-[#D4AF37]/50 bg-[#8B0000]/5 text-[#8B0000] text-[10px] uppercase tracking-[0.26em] font-bold">
-                ✦ DUI KONNA DROP ✦
+              <span className="inline-block px-3 py-1 rounded-full border border-[#D4AF37]/50 bg-[#133827]/5 text-[#133827] text-[10px] uppercase tracking-[0.26em] font-bold">
+                ✦ TAFA DROP ✦
               </span>
             </div>
-            <h2 className="text-3xl sm:text-4xl md:text-[42px] font-bold tracking-tight text-[#8B0000] font-heading">
+            <h2 className="text-3xl sm:text-4xl md:text-[42px] font-bold tracking-tight text-[#133827] font-heading">
               New Arrivals
             </h2>
           </div>
           <Link
             href="/collections/new-arrivals"
-            className="text-xs font-bold uppercase tracking-[0.22em] text-[#8B0000] border-b-2 border-[#d4af37] hover:border-[#8B0000] pb-1.5 transition-colors inline-flex items-center gap-2 cursor-pointer group/link"
+            className="text-xs font-bold uppercase tracking-[0.22em] text-[#133827] border-b-2 border-[#d4af37] hover:border-[#133827] pb-1.5 transition-colors inline-flex items-center gap-2 cursor-pointer group/link"
           >
-            Browse All Items <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 text-[#d4af37] group-hover/link:text-[#8B0000]" />
+            Browse All Items <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 text-[#d4af37] group-hover/link:text-[#133827]" />
           </Link>
         </motion.div>
 

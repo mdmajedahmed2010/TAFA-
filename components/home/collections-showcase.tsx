@@ -1,8 +1,8 @@
 "use client";
 
 /**
- * Dui Konna (দুই কন্যা) — Collections Showcase
- * Authentic Dhakai Muslin, Jamdani & Luxury Karchupi Sarees
+ * TAFA | Dhaka (তাফা) — Collections Showcase
+ * Authentic Sarees, Kalamkari, Tissue Katan & Luxury Drape
  */
 
 import Link from "next/link";
@@ -70,7 +70,7 @@ export function CollectionsShowcase({ collections }: CollectionsShowcaseProps) {
           variants={headingVariants}
           className="text-center max-w-lg mx-auto mb-10 md:mb-16"
         >
-          <p className="text-[10px] uppercase tracking-[0.25em] text-[#8B0000] font-bold mb-3">
+          <p className="text-[10px] uppercase tracking-[0.25em] text-[#133827] font-bold mb-3">
             EXPLORE EVERYTHING
           </p>
           <h2 className="text-2xl md:text-[36px] font-bold tracking-tight text-[#1A1A1A] font-serif">

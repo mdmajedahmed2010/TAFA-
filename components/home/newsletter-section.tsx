@@ -41,16 +41,16 @@ export function NewsletterSection() {
   };
 
   return (
-    <section className="bg-[#1a1a1a] py-16 md:py-20">
+    <section className="bg-[#0E291C] py-16 md:py-20 border-t border-[#D4AF37]/20">
       <div className="container mx-auto px-6 md:px-8 text-center">
         <p className="text-[11px] uppercase tracking-[0.3em] text-[#d4af37] font-medium mb-3">
-          Stay Connected • ৪৮৪K+ Community
+          Stay Connected • ৪০৪K+ Community
         </p>
-        <h2 className="text-2xl md:text-3xl font-bold text-white tracking-[-0.02em] mb-3">
-          Join the Dui Konna Family
+        <h2 className="text-2xl md:text-3xl font-bold text-white tracking-[-0.02em] mb-3 font-serif">
+          Join the TAFA Family
         </h2>
-        <p className="text-sm text-white/50 max-w-sm mx-auto mb-8">
-          Subscribe for exclusive Dhakai Muslin launches, festive saree previews, and VIP showroom events.
+        <p className="text-sm text-white/70 max-w-sm mx-auto mb-8 font-sans">
+          Subscribe for exclusive saree launches, festive previews, and VIP Dhanmondi showroom events.
         </p>
 
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">

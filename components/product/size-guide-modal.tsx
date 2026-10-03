@@ -1,6 +1,6 @@
 /**
- * Dui Konna (দুই কন্যা) — Saree & Couture Measurement Guide Modal
- * Traditional 12-Haat Dhakai Muslin drape specs + Unstitched Blouse piece & Pret sizing
+ * TAFA | Dhaka (তাফা) — Saree & Measurement Guide Modal
+ * Traditional 12-Haat Saree drape specs + Unstitched Blouse piece & sizing
  */
 
 "use client";
